@@ -1,0 +1,16 @@
+{
+  "name": "EduLearning & Immersion",
+  "short_name": "EduLearning",
+  "description": "Global bilingual language training and professional communication solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
