@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface DashboardStats {
   totalRequests: number;
@@ -115,7 +116,7 @@ export default function AdminDashboard() {
           Quick Actions
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <a
+          <Link
             href="/admin/blog"
             className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 hover:bg-green-50 transition"
           >
@@ -123,8 +124,8 @@ export default function AdminDashboard() {
             <span className="text-sm font-medium text-gray-700">
               New Blog Post
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/admin/requests"
             className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 hover:bg-green-50 transition"
           >
@@ -132,8 +133,8 @@ export default function AdminDashboard() {
             <span className="text-sm font-medium text-gray-700">
               View Requests
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/admin/pricing"
             className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 hover:bg-green-50 transition"
           >
@@ -141,8 +142,8 @@ export default function AdminDashboard() {
             <span className="text-sm font-medium text-gray-700">
               Update Pricing
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/admin/emails"
             className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 hover:bg-green-50 transition"
           >
@@ -150,7 +151,7 @@ export default function AdminDashboard() {
             <span className="text-sm font-medium text-gray-700">
               Send Emails
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
