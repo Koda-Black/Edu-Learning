@@ -12,90 +12,90 @@ export default function ProgramsPage() {
 
   const filters = [
     { key: "all", label: t("programs.allLevels") },
-    { key: "beginner", label: t("programs.beginner") },
-    { key: "intermediate", label: t("programs.intermediate") },
-    { key: "advanced", label: t("programs.advanced") },
+    { key: "a1a2", label: t("programs.beginner") },
+    { key: "b1b2", label: t("programs.intermediate") },
+    { key: "exam", label: t("programs.advanced") },
   ];
 
   const programs = [
     {
       title: t("programs.p1Title"),
-      level: "beginner",
+      level: "a1a2",
       duration: t("programs.p1Duration"),
       format: t("programs.p1Format"),
-      price: "₦35,000/mo",
+      price: "₦32,000–₦34,000",
       desc: t("programs.p1Desc"),
       img: "/images/hero-main.png",
     },
     {
       title: t("programs.p2Title"),
-      level: "beginner",
+      level: "a1a2",
       duration: t("programs.p2Duration"),
       format: t("programs.p2Format"),
-      price: "₦35,000/mo",
+      price: "₦32,000–₦34,000",
       desc: t("programs.p2Desc"),
       img: "/images/about-person.png",
     },
     {
       title: t("programs.p3Title"),
-      level: "intermediate",
+      level: "b1b2",
       duration: t("programs.p3Duration"),
       format: t("programs.p3Format"),
-      price: "₦55,000/mo",
+      price: "₦46,000–₦52,000",
       desc: t("programs.p3Desc"),
       img: "/images/features-person.png",
     },
     {
       title: t("programs.p4Title"),
-      level: "intermediate",
+      level: "b1b2",
       duration: t("programs.p4Duration"),
       format: t("programs.p4Format"),
-      price: "₦55,000/mo",
+      price: "₦46,000–₦52,000",
       desc: t("programs.p4Desc"),
       img: "/images/hero-tall.png",
     },
     {
       title: t("programs.p5Title"),
-      level: "advanced",
+      level: "a1a2",
       duration: t("programs.p5Duration"),
       format: t("programs.p5Format"),
-      price: "₦40,000/mo",
+      price: "₦41,600–₦44,200",
       desc: t("programs.p5Desc"),
       img: "/images/faq-person.png",
     },
     {
       title: t("programs.p6Title"),
-      level: "advanced",
+      level: "b1b2",
       duration: t("programs.p6Duration"),
       format: t("programs.p6Format"),
-      price: "₦65,000/mo",
+      price: "On request",
       desc: t("programs.p6Desc"),
       img: "/images/hero-card.png",
     },
     {
       title: t("programs.p7Title"),
-      level: "beginner",
+      level: "exam",
       duration: t("programs.p7Duration"),
       format: t("programs.p7Format"),
-      price: "₦25,000/mo",
+      price: "Contact us",
       desc: t("programs.p7Desc"),
       img: "/images/project-1.png",
     },
     {
       title: t("programs.p8Title"),
-      level: "intermediate",
+      level: "exam",
       duration: t("programs.p8Duration"),
       format: t("programs.p8Format"),
-      price: "Custom",
+      price: "Contact us",
       desc: t("programs.p8Desc"),
       img: "/images/project-2.png",
     },
     {
       title: t("programs.p9Title"),
-      level: "advanced",
+      level: "b1b2",
       duration: t("programs.p9Duration"),
       format: t("programs.p9Format"),
-      price: "₦120,000",
+      price: "Custom",
       desc: t("programs.p9Desc"),
       img: "/images/project-3.png",
     },
@@ -173,9 +173,9 @@ export default function ProgramsPage() {
                   <div className="p-7">
                     <div className="flex items-center gap-2 mb-4">
                       <span className="px-3 py-1 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-xs font-medium">
-                        {prog.level === "beginner"
+                        {prog.level === "a1a2"
                           ? t("programs.beginner")
-                          : prog.level === "intermediate"
+                          : prog.level === "b1b2"
                             ? t("programs.intermediate")
                             : t("programs.advanced")}
                       </span>

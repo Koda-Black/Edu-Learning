@@ -9,9 +9,23 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title:
-    "Edu Learning & Immersion - Language Training & Professional Communication",
+    "Edu learning & Immersion — Bridging Languages and Cultures for Global Collaboration",
   description:
-    "Global bilingual language programs for individuals and corporate training solutions",
+    "CEFR-aligned language training in English, French & German. Professional translation, interpretation & proofreading services. Corporate programs available.",
+  metadataBase: new URL("https://edu-learning-kappa.vercel.app"),
+  openGraph: {
+    title: "Edu learning & Immersion",
+    description:
+      "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
+    siteName: "Edu learning & Immersion",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Edu learning & Immersion",
+    description:
+      "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
+  },
 };
 
 const locales = ["en", "fr"] as const;

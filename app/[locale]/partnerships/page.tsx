@@ -13,6 +13,7 @@ export default function PartnershipsPage() {
     { title: t("partnerships.t2Title"), desc: t("partnerships.t2Desc") },
     { title: t("partnerships.t3Title"), desc: t("partnerships.t3Desc") },
     { title: t("partnerships.t4Title"), desc: t("partnerships.t4Desc") },
+    { title: t("partnerships.t5Title"), desc: t("partnerships.t5Desc") },
   ];
 
   const teachLanguages = [
@@ -51,7 +52,7 @@ export default function PartnershipsPage() {
               </p>
               <a
                 href={getWhatsAppUrl(
-                  "Hey, I'd love to partner with you! I'm interested in learning more about partnership opportunities with Edu Learning.",
+                  "Hi, I'm interested in learning more about partnership opportunities with Edu learning & Immersion.",
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -133,7 +134,7 @@ export default function PartnershipsPage() {
               🌍 Teach With Us
             </span>
             <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5">
-              Teach Your Language Under Edu Learning
+              Teach Your Language Under Edu learning & Immersion
             </h2>
             <p className="text-[16px] text-[#4F635E] leading-[1.6] max-w-[600px] mx-auto">
               Are you a language teacher? Join our platform and teach students
@@ -158,7 +159,7 @@ export default function PartnershipsPage() {
           <div className="text-center">
             <a
               href={getWhatsAppUrl(
-                "Hey, I'm a language teacher and I'd love to teach under Edu Learning platform. I'd like to discuss opportunities.",
+                "Hi, I'm a language teacher and I'd love to teach under the Edu learning & Immersion platform. I'd like to discuss opportunities.",
               )}
               target="_blank"
               rel="noopener noreferrer"

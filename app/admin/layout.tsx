@@ -45,7 +45,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               Admin Login
             </h1>
             <p className="text-gray-500 text-sm mb-6">
-              Edu Learning & Immersion
+              Edu learning & Immersion
             </p>
             <form onSubmit={handleLogin}>
               <input
@@ -93,11 +93,11 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               <Link href="/admin" className="flex items-center gap-3">
                 <img
                   src="/images/logo/LOGO.png"
-                  alt="Edu Learning"
+                  alt="Edu learning & Immersion"
                   className="w-10 h-10 rounded-xl object-contain"
                 />
                 <div>
-                  <h2 className="font-bold text-gray-800">EduLearning</h2>
+                  <h2 className="font-bold text-gray-800">Edu learning & Immersion</h2>
                   <p className="text-xs text-gray-500">Admin Panel</p>
                 </div>
               </Link>

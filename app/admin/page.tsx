@@ -77,7 +77,7 @@ export default function AdminDashboard() {
     <div>
       <h1 className="text-3xl font-bold text-gray-800 mb-2">Dashboard</h1>
       <p className="text-gray-500 mb-8">
-        Welcome to the Edu Learning admin panel
+        Welcome to the Edu learning & Immersion admin panel
       </p>
 
       {loading ? (

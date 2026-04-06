@@ -9,30 +9,32 @@ interface Message {
 }
 
 const KNOWLEDGE_BASE: Record<string, string> = {
-  "programs|courses|learn|language|english|french":
-    "We offer a variety of language programs including General English & French, Business English & French, Advanced Conversation, Exam Preparation (IELTS, DELF, TEF), Kids & Teens programs, Corporate Training, and Intensive Immersion courses. Our programs run from 1-4 months with both online and in-person options.",
-  "price|cost|fee|how much|naira|₦|pricing|plan":
-    "Our plans start at ₦15,000/month (Basic), ₦30,000/month (Pro with full access), and ₦75,000/month (Team). Program-specific pricing: General courses from ₦35,000/mo, Business courses from ₦55,000/mo, Exam Prep from ₦65,000/mo, Kids from ₦25,000/mo, and Intensive Immersion at ₦120,000. Corporate training is custom-priced based on team size and needs.",
+  "programs|courses|learn|language|english|french|german":
+    "We offer CEFR-aligned language programs (A1–B2) in English, French, and German. Each level is divided into 3 packs — choose Intensive (5x/week, 10hrs/week) or Semi-Intensive (3x/week, 6hrs/week), available online and in-person. We also offer Exam Preparation for TEF, TCF, DELF, DALF, and Goethe-Zertifikat (40 hours over 7 weeks).",
+  "price|cost|fee|how much|naira|₦|pricing|plan|pack":
+    "Our pricing is pack-based per CEFR level:\n\n• English/French A1–A2: Pack 1 ₦32,000 + ₦5,000 material, Pack 2–3 ₦34,000 each\n• English/French B1–B2: Pack 1 ₦46,000 + ₦5,000 material, Pack 2–3 ₦52,000 each\n• German A1–A2: Pack 1 ₦41,600 + ₦5,000 material, Pack 2–3 ₦44,200 each\n\nEach level has 3 packs. Exam preparation is a separate program.",
   "corporate|company|team|business training|organization":
-    "Our corporate training helps teams master professional communication. We offer customized programs, flexible scheduling (online/hybrid/physical), expert trainers, progress tracking, group & individual sessions, and certification. Use the free consultation form on our Corporate Training page to get a custom quote with our pricing calculator!",
-  "translat|interpret|document|localization":
-    "We provide professional translation & interpretation services including Document Translation, Simultaneous Interpretation, Website Localization, and Certified Translation. You can upload your documents (PDF/DOC) through our translation page form, and we'll get back with a quote within 24 hours. Use our price calculator to estimate costs.",
+    "Our corporate training helps teams master professional communication with CEFR-aligned programs. We offer customized programs, intensive/semi-intensive scheduling (online/hybrid/on-site), expert certified trainers, progress tracking with CEFR benchmarks, group & individual sessions, and certification. Use the free consultation form on our Corporate Training page!",
+  "translat|interpret|document|localization|proofread|edit":
+    "We provide comprehensive language services:\n\n• Document Translation (legal, medical, technical, business)\n• Interpretation: Simultaneous (₦112,500/hr), Consecutive (₦75,000/hr), Liaison (₦67,500/hr), Remote (₦60,000/hr)\n• Proofreading: Basic (₦4,000/page), Professional (₦6,000/page), Premium Rewriting (₦10,000/page)\n• 15% discount for full-day interpretation bookings\n\nRequest a quote through our Translation page!",
   "partner|teach|join|collaborate":
-    "We welcome partnerships with Academic Institutions, Corporate Partners, NGOs & International Organizations, and Government Agencies. We also have opportunities for teachers of Dutch, German, Spanish, Chinese and other languages to teach under the Edu Learning platform. Contact us to learn more!",
-  "certificate|certification|diploma":
-    "Yes! All our learners receive recognized certificates upon successful program completion. These certificates are recognized by employers and academic institutions worldwide.",
+    "We welcome partnerships with Academic Institutions, Corporate Partners, NGOs & International Organizations, Government Agencies, and Language Teachers. Qualified teachers of English, French, German, Dutch, Spanish, Chinese and other languages can teach under our platform. Contact us to learn more!",
+  "certificate|certification|diploma|exam|ielts|delf|tef|tcf|dalf|goethe":
+    "Yes! Learners receive certificates upon CEFR level completion. We also prepare students for international exams: TEF, TCF, DELF, DALF (French) and Goethe-Zertifikat (German). Exam prep covers 40 hours over 7 weeks. Contact languageservices@edulearningimmersion.org for exam details.",
   "contact|reach|phone|email|address|whatsapp":
-    "You can reach us via Email at info@edulearning.com or WhatsApp at +234 810 083 5573. We typically respond within minutes on WhatsApp!",
+    "You can reach us via:\n• Email: contact@edulearningimmersion.org\n• Language Services: languageservices@edulearningimmersion.org\n• WhatsApp: +234 916 078 4634\n\nWe typically respond within minutes on WhatsApp!",
   "about|who|company|history|founded":
-    "Edu Learning & Immersion is a modern language training platform focused on practical, skill-based education. We serve learners across 25+ countries with both English and French programs, corporate training, and professional translation services.",
-  "schedule|time|flexible|online|virtual|physical|hybrid":
-    "We offer flexible scheduling with online, in-person, and hybrid formats. You can learn at your own pace with morning, afternoon, or evening sessions available.",
-  "beginner|start|new|first time":
-    "Absolutely! Our programs are beginner-friendly and start from the basics. Our General English and General French programs are perfect for beginners, running for 3 months with both online and in-person options.",
-  "kids|children|teens|young":
-    "We have special Kids & Teens English classes designed with fun, engaging content for young learners. These are ongoing programs available both online and in-person, starting at ₦25,000/month.",
-  "exam|ielts|delf|tef|test":
-    "Our Exam Preparation program helps you prepare for IELTS, DELF, TEF, and other international proficiency exams. The program runs for 3 months and is available both online and in-person.",
+    "Edu learning & Immersion is a leading provider of language training, translation, interpretation, proofreading, and digital communication solutions. Our mission is to bridge languages and cultures for global collaboration. We serve learners and organizations worldwide with CEFR-structured programs.",
+  "schedule|time|flexible|online|virtual|physical|hybrid|intensive":
+    "We offer two formats:\n• Intensive: 5 sessions/week, 10 hours/week\n• Semi-Intensive: 3 sessions/week, 6 hours/week\n\nBoth available online and in-person. Corporate clients can also arrange hybrid and on-site delivery.",
+  "beginner|start|new|first time|a1":
+    "Absolutely! Our A1 level is designed specifically for complete beginners with no prior knowledge. Each level (A1, A2, B1, B2) has 3 packs, so you progress step by step. Available in English, French, and German.",
+  "cefr|level|a1|a2|b1|b2":
+    "Our courses follow the CEFR (Common European Framework of Reference):\n• A1: Complete beginner\n• A2: Elementary\n• B1: Intermediate\n• B2: Upper-intermediate\n\nEach level is divided into 3 packs. A full level takes approximately 12–18 weeks depending on your chosen format.",
+  "school|kids|children|teens|young":
+    "We partner with primary and secondary schools to deliver structured language programs. We also offer after-school language clubs, teacher training workshops, and extracurricular programs. Contact us for a school partnership proposal.",
+  "digital|marketing|content|social media":
+    "We provide digital communication solutions including social media strategy, multilingual content creation, digital marketing, and brand communication consulting in English, French, and other languages.",
 };
 
 function findAnswer(input: string): string {
@@ -43,7 +45,7 @@ function findAnswer(input: string): string {
       return answer;
     }
   }
-  return `I don't have specific information about that, but I'd love to help! You can:\n\n• Chat with us on WhatsApp for quick answers\n• Email us at info@edulearning.com\n• Browse our website pages for detailed information\n\nWould you like to ask about our programs, pricing, corporate training, or translation services?`;
+  return `I don't have specific information about that, but I'd love to help! You can:\n\n• Chat with us on WhatsApp for quick answers\n• Email us at contact@edulearningimmersion.org\n• Browse our website pages for detailed information\n\nWould you like to ask about our programs, pricing, corporate training, or translation services?`;
 }
 
 export function ChatBot() {
@@ -51,7 +53,7 @@ export function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "bot",
-      text: "Hello! 👋 I'm the Edu Learning assistant. Ask me about our programs, pricing, corporate training, translation services, or anything else!",
+      text: "Hello! 👋 I'm the Edu learning & Immersion assistant. Ask me about our CEFR-aligned language programs, pricing, corporate training, translation & interpretation services, or anything else!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -92,7 +94,7 @@ export function ChatBot() {
       label: "WhatsApp",
       action: () =>
         window.open(
-          getWhatsAppUrl("Hi, I have a question about Edu Learning"),
+          getWhatsAppUrl("Hi, I have a question about Edu learning & Immersion"),
           "_blank",
         ),
     },
@@ -159,7 +161,7 @@ export function ChatBot() {
               </div>
               <div>
                 <h3 className="text-white font-semibold text-sm">
-                  Edu Learning
+                Edu learning & Immersion
                 </h3>
                 <p className="text-white/70 text-xs">
                   Ask me anything about our services

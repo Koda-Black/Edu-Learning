@@ -242,7 +242,7 @@ export default function HomePage() {
   const pricing = [
     {
       name: t("homepage.pricing.plan1Name"),
-      price: "₦15,000",
+      price: "₦32,000",
       period: t("homepage.pricing.plan1Period"),
       desc: t("homepage.pricing.plan1Desc"),
       included: [
@@ -256,7 +256,7 @@ export default function HomePage() {
     },
     {
       name: t("homepage.pricing.plan2Name"),
-      price: "₦30,000",
+      price: "₦46,000",
       period: t("homepage.pricing.plan2Period"),
       desc: t("homepage.pricing.plan2Desc"),
       included: [
@@ -271,7 +271,7 @@ export default function HomePage() {
     },
     {
       name: t("homepage.pricing.plan3Name"),
-      price: "₦75,000",
+      price: "₦41,600",
       period: t("homepage.pricing.plan3Period"),
       desc: t("homepage.pricing.plan3Desc"),
       included: [
@@ -303,6 +303,22 @@ export default function HomePage() {
     {
       q: t("homepage.faq.q4"),
       a: t("homepage.faq.a4"),
+    },
+    {
+      q: t("homepage.faq.q5"),
+      a: t("homepage.faq.a5"),
+    },
+    {
+      q: t("homepage.faq.q6"),
+      a: t("homepage.faq.a6"),
+    },
+    {
+      q: t("homepage.faq.q10"),
+      a: t("homepage.faq.a10"),
+    },
+    {
+      q: t("homepage.faq.q29"),
+      a: t("homepage.faq.a29"),
     },
   ];
 
@@ -394,7 +410,7 @@ export default function HomePage() {
                 <div className="bg-[#0D883C] rounded-[20px] p-5 flex flex-col gap-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white/60 text-xs">
-                      &copy; 2026 &ndash; Edu Learning
+                      &copy; 2026 &ndash; Edu learning & Immersion
                     </span>
                     <span className="inline-flex px-4 py-1 rounded-[50px] bg-[#F3FAF5] text-[#003B2D] text-xs font-medium">
                       {t("homepage.hero.languageTag")}
@@ -414,7 +430,7 @@ export default function HomePage() {
                 <div className="bg-[#003B2D] rounded-[20px] p-5 flex flex-col gap-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white/60 text-xs">
-                      &copy; 2026 &ndash; Edu Learning
+                      &copy; 2026 &ndash; Edu learning & Immersion
                     </span>
                     <span className="text-white/60 text-xs">Best</span>
                   </div>
@@ -727,7 +743,7 @@ export default function HomePage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute top-4 left-4 text-white/50 text-xs">
-                      &copy; 2026 &ndash; Edu Learning
+                      &copy; 2026 &ndash; Edu learning & Immersion
                     </div>
                     <div className="absolute bottom-5 left-5 right-5">
                       <h4 className="text-[20px] font-semibold text-white leading-[1.3]">
@@ -1041,7 +1057,7 @@ export default function HomePage() {
                     </p>
                     <a
                       href={getWhatsAppUrl(
-                        "Hi, I have a question about Edu Learning programs and services.",
+                        "Hi, I have a question about Edu learning & Immersion programs and services.",
                       )}
                       target="_blank"
                       rel="noopener noreferrer"

@@ -50,11 +50,12 @@ export function Header() {
           <Link href={`/${locale}`} className="flex items-center gap-2.5 group">
             <img
               src="/images/logo/LOGO.png"
-              alt="Edu Learning"
+              alt="Edu learning & Immersion"
               className="w-9 h-9 rounded-xl object-contain transition-transform group-hover:scale-105"
             />
-            <span className="hidden sm:inline text-[#0A0915] font-semibold text-lg tracking-tight">
-              Edu<span className="text-[#0D883C]">Learning</span>
+            <span className="text-[#0A0915] font-semibold text-sm sm:text-lg tracking-tight leading-tight">
+              Edu <span className="text-[#0D883C]">learning</span>
+              <span className="text-[#0D883C]"> & Immersion</span>
             </span>
           </Link>
 

@@ -10,14 +10,14 @@ export default function ContactPage() {
   const contactMethods = [
     {
       title: t("contact.email"),
-      value: "info@edulearning.com",
-      href: "mailto:info@edulearning.com",
+      value: "contact@edulearningimmersion.org",
+      href: "mailto:contact@edulearningimmersion.org",
       icon: "email",
     },
     {
       title: t("contact.whatsapp"),
-      value: "+234 810 083 5573",
-      href: "https://wa.me/2348100835573?text=Hi%2C%20I%27d%20like%20to%20inquire%20about%20Edu%20Learning%20services",
+      value: "+234 916 078 4634",
+      href: "https://wa.me/2349160784634?text=Hi%2C%20I%27d%20like%20to%20inquire%20about%20Edu%20learning%20%26%20Immersion%20services",
       icon: "phone",
     },
   ];
