@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "https://edu-learning-kappa.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Edu learning & Immersion",
@@ -40,7 +40,14 @@ export const metadata: Metadata = {
     title: "Edu learning & Immersion",
     description:
       "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
-    images: ["/images/og-image.png"],
+    images: [
+      {
+        url: "https://edu-learning-kappa.vercel.app/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Edu learning & Immersion",
+      },
+    ],
   },
 };
 
