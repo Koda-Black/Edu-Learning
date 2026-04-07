@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="20" fill="#F3FAF5"/>
+  <!-- Classroom whiteboard -->
+  <rect x="130" y="60" width="340" height="200" rx="8" fill="white" stroke="#003B2D" stroke-width="1.5" opacity="0.2"/>
+  <!-- Writing on whiteboard -->
+  <text x="170" y="110" font-family="system-ui" font-size="18" fill="#003B2D" opacity="0.2" font-weight="700">ABC</text>
+  <text x="310" y="110" font-family="system-ui" font-size="18" fill="#0D883C" opacity="0.2" font-weight="700">学习</text>
+  <text x="170" y="150" font-family="system-ui" font-size="14" fill="#003B2D" opacity="0.15">Bonjour</text>
+  <text x="300" y="150" font-family="system-ui" font-size="14" fill="#0D883C" opacity="0.15">Hello</text>
+  <text x="380" y="150" font-family="system-ui" font-size="14" fill="#003B2D" opacity="0.15">Hola</text>
+  <!-- Desk -->
+  <rect x="100" y="280" width="400" height="10" rx="3" fill="#003B2D" opacity="0.08"/>
+  <!-- Student silhouettes -->
+  <circle cx="200" cy="310" r="12" fill="#8B5E3C" opacity="0.2"/>
+  <path d="M185 345c0-10 7-18 15-18s15 8 15 18" fill="#003B2D" opacity="0.1"/>
+  <circle cx="300" cy="310" r="12" fill="#6B4226" opacity="0.2"/>
+  <path d="M285 345c0-10 7-18 15-18s15 8 15 18" fill="#0D883C" opacity="0.1"/>
+  <circle cx="400" cy="310" r="12" fill="#A0714F" opacity="0.2"/>
+  <path d="M385 345c0-10 7-18 15-18s15 8 15 18" fill="#003B2D" opacity="0.1"/>
+  <!-- Book on desk -->
+  <rect x="230" y="270" width="30" height="4" rx="1" fill="#0D883C" opacity="0.15"/>
+  <rect x="340" y="270" width="30" height="4" rx="1" fill="#003B2D" opacity="0.12"/>
+  <!-- Decorative -->
+  <circle cx="530" cy="80" r="20" fill="#0D883C" opacity="0.06"/>
+  <circle cx="70" cy="340" r="15" fill="#003B2D" opacity="0.05"/>
+</svg>

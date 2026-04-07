@@ -73,7 +73,14 @@ export function Footer() {
 
         {/* Social Icons */}
         <div className="flex gap-3 mb-8">
-          {["facebook", "twitter", "linkedin", "youtube", "instagram", "tiktok"].map((s) => (
+          {[
+            "facebook",
+            "twitter",
+            "linkedin",
+            "youtube",
+            "instagram",
+            "tiktok",
+          ].map((s) => (
             <a
               key={s}
               href={`https://${s === "tiktok" ? "tiktok" : s}.com`}

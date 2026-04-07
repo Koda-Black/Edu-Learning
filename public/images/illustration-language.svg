@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="20" fill="#F3FAF5"/>
+  <rect x="40" y="40" width="520" height="320" rx="16" fill="white" stroke="#EAF0EF" stroke-width="1"/>
+  <!-- Book -->
+  <path d="M200 120l100 20 100-20v160l-100 20-100-20V120z" fill="#0D883C" opacity="0.1"/>
+  <path d="M200 120l100 20v160l-100-20V120z" fill="#0D883C" opacity="0.15"/>
+  <path d="M300 140l100-20v160l-100 20V140z" fill="#0D883C" opacity="0.08"/>
+  <line x1="300" y1="140" x2="300" y2="300" stroke="#0D883C" stroke-width="2" opacity="0.3"/>
+  <!-- Speech bubbles -->
+  <rect x="340" y="80" width="120" height="50" rx="12" fill="#0D883C" opacity="0.15"/>
+  <text x="360" y="110" font-family="system-ui" font-size="14" fill="#003B2D" font-weight="600">Bonjour!</text>
+  <rect x="140" y="80" width="110" height="50" rx="12" fill="#003B2D" opacity="0.1"/>
+  <text x="158" y="110" font-family="system-ui" font-size="14" fill="#003B2D" font-weight="600">Hello!</text>
+  <!-- Decorative dots -->
+  <circle cx="80" cy="350" r="4" fill="#0D883C" opacity="0.2"/>
+  <circle cx="95" cy="350" r="4" fill="#0D883C" opacity="0.15"/>
+  <circle cx="110" cy="350" r="4" fill="#0D883C" opacity="0.1"/>
+  <!-- African pattern accent -->
+  <path d="M60 70h8l-4-8zM76 70h8l-4-8zM92 70h8l-4-8z" fill="#0D883C" opacity="0.2"/>
+  <path d="M500 340h8l-4 8zM516 340h8l-4 8zM532 340h8l-4 8z" fill="#0D883C" opacity="0.2"/>
+</svg>

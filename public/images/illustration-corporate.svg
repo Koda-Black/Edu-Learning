@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="20" fill="#F3FAF5"/>
+  <!-- Corporate building silhouette -->
+  <rect x="220" y="100" width="160" height="200" rx="8" fill="#003B2D" opacity="0.1"/>
+  <rect x="240" y="120" width="30" height="25" rx="4" fill="#0D883C" opacity="0.15"/>
+  <rect x="285" y="120" width="30" height="25" rx="4" fill="#0D883C" opacity="0.15"/>
+  <rect x="330" y="120" width="30" height="25" rx="4" fill="#0D883C" opacity="0.15"/>
+  <rect x="240" y="160" width="30" height="25" rx="4" fill="#0D883C" opacity="0.12"/>
+  <rect x="285" y="160" width="30" height="25" rx="4" fill="#0D883C" opacity="0.12"/>
+  <rect x="330" y="160" width="30" height="25" rx="4" fill="#0D883C" opacity="0.12"/>
+  <rect x="240" y="200" width="30" height="25" rx="4" fill="#0D883C" opacity="0.1"/>
+  <rect x="285" y="200" width="30" height="25" rx="4" fill="#0D883C" opacity="0.1"/>
+  <rect x="330" y="200" width="30" height="25" rx="4" fill="#0D883C" opacity="0.1"/>
+  <!-- Door -->
+  <rect x="280" y="250" width="40" height="50" rx="4" fill="#0D883C" opacity="0.2"/>
+  <!-- People silhouettes -->
+  <circle cx="140" cy="230" r="14" fill="#8B5E3C" opacity="0.4"/>
+  <path d="M120 280c0-14 9-22 20-22s20 8 20 22" fill="#003B2D" opacity="0.2"/>
+  <circle cx="460" cy="220" r="14" fill="#A0714F" opacity="0.4"/>
+  <path d="M440 270c0-14 9-22 20-22s20 8 20 22" fill="#0D883C" opacity="0.2"/>
+  <!-- Chart element -->
+  <rect x="430" y="120" width="12" height="60" rx="3" fill="#0D883C" opacity="0.2"/>
+  <rect x="450" y="140" width="12" height="40" rx="3" fill="#0D883C" opacity="0.15"/>
+  <rect x="470" y="100" width="12" height="80" rx="3" fill="#003B2D" opacity="0.2"/>
+  <!-- Decorative zigzag -->
+  <path d="M60 50 l8-8 8 8 8-8 8 8 8-8 8 8" stroke="#0D883C" stroke-width="2" fill="none" opacity="0.15"/>
+</svg>

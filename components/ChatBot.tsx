@@ -94,7 +94,9 @@ export function ChatBot() {
       label: "WhatsApp",
       action: () =>
         window.open(
-          getWhatsAppUrl("Hi, I have a question about Edu learning & Immersion"),
+          getWhatsAppUrl(
+            "Hi, I have a question about Edu learning & Immersion",
+          ),
           "_blank",
         ),
     },
@@ -161,7 +163,7 @@ export function ChatBot() {
               </div>
               <div>
                 <h3 className="text-white font-semibold text-sm">
-                Edu learning & Immersion
+                  Edu learning & Immersion
                 </h3>
                 <p className="text-white/70 text-xs">
                   Ask me anything about our services
@@ -181,11 +183,12 @@ export function ChatBot() {
                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl p-3 text-sm whitespace-pre-line ${
+                  className={`max-w-[85%] rounded-2xl p-3 text-sm whitespace-pre-line break-words overflow-hidden ${
                     msg.role === "user"
                       ? "bg-[#0D883C] text-white rounded-br-sm"
                       : "bg-[#F3FAF5] text-[#4F635E] rounded-tl-sm"
                   }`}
+                  style={{ overflowWrap: "anywhere" }}
                 >
                   {msg.text}
                 </div>

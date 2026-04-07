@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="20" fill="#F3FAF5"/>
+  <!-- Phone/chat bubble -->
+  <rect x="240" y="60" width="120" height="200" rx="16" fill="white" stroke="#0D883C" stroke-width="1.5" opacity="0.3"/>
+  <rect x="268" y="66" width="64" height="6" rx="3" fill="#003B2D" opacity="0.1"/>
+  <!-- Chat messages -->
+  <rect x="255" y="95" width="70" height="24" rx="12" fill="#0D883C" opacity="0.15"/>
+  <rect x="275" y="130" width="70" height="24" rx="12" fill="#003B2D" opacity="0.1"/>
+  <rect x="255" y="165" width="55" height="24" rx="12" fill="#0D883C" opacity="0.15"/>
+  <rect x="280" y="200" width="65" height="24" rx="12" fill="#003B2D" opacity="0.1"/>
+  <!-- Email envelope -->
+  <rect x="80" y="120" width="100" height="70" rx="8" fill="white" stroke="#0D883C" stroke-width="1.5" opacity="0.25"/>
+  <path d="M80 128l50 35 50-35" stroke="#0D883C" stroke-width="1.5" fill="none" opacity="0.2"/>
+  <!-- Location pin -->
+  <path d="M480 150c0 20-25 45-25 45s-25-25-25-45a25 25 0 0 1 50 0z" fill="#0D883C" opacity="0.12"/>
+  <circle cx="455" cy="148" r="8" fill="#0D883C" opacity="0.08"/>
+  <!-- Decorative circles -->
+  <circle cx="420" cy="280" r="30" fill="#0D883C" opacity="0.05"/>
+  <circle cx="420" cy="280" r="20" fill="#0D883C" opacity="0.05"/>
+  <circle cx="130" cy="280" r="25" fill="#003B2D" opacity="0.05"/>
+  <!-- African pattern -->
+  <path d="M200 350 l8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8" stroke="#0D883C" stroke-width="1.5" fill="none" opacity="0.12"/>
+</svg>

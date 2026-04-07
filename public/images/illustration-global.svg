@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="20" fill="#F3FAF5"/>
+  <!-- Globe -->
+  <circle cx="300" cy="190" r="110" fill="#0D883C" opacity="0.08" stroke="#0D883C" stroke-width="1.5" opacity="0.2"/>
+  <ellipse cx="300" cy="190" rx="50" ry="110" fill="none" stroke="#0D883C" stroke-width="1" opacity="0.15"/>
+  <ellipse cx="300" cy="190" rx="110" ry="50" fill="none" stroke="#0D883C" stroke-width="1" opacity="0.15"/>
+  <line x1="190" y1="190" x2="410" y2="190" stroke="#0D883C" stroke-width="1" opacity="0.12"/>
+  <line x1="300" y1="80" x2="300" y2="300" stroke="#0D883C" stroke-width="1" opacity="0.12"/>
+  <!-- Connection nodes -->
+  <circle cx="220" cy="140" r="8" fill="#0D883C" opacity="0.3"/>
+  <circle cx="380" cy="140" r="8" fill="#003B2D" opacity="0.25"/>
+  <circle cx="250" cy="250" r="8" fill="#0D883C" opacity="0.25"/>
+  <circle cx="360" cy="230" r="8" fill="#003B2D" opacity="0.3"/>
+  <circle cx="300" cy="120" r="8" fill="#0D883C" opacity="0.35"/>
+  <!-- Connection lines -->
+  <line x1="220" y1="140" x2="300" y2="120" stroke="#0D883C" stroke-width="1" opacity="0.2"/>
+  <line x1="380" y1="140" x2="300" y2="120" stroke="#0D883C" stroke-width="1" opacity="0.2"/>
+  <line x1="250" y1="250" x2="360" y2="230" stroke="#003B2D" stroke-width="1" opacity="0.15"/>
+  <!-- African pattern border -->
+  <path d="M40 360 l10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10" stroke="#0D883C" stroke-width="2" fill="none" opacity="0.15"/>
+</svg>

@@ -21,25 +21,25 @@ export default function AboutPage() {
       name: t("about.tm1Name"),
       role: t("about.tm1Role"),
       desc: t("about.tm1Desc"),
-      img: "/images/testimonial-1.png",
+      img: "/images/avatar-talom.svg",
     },
     {
       name: t("about.tm2Name"),
       role: t("about.tm2Role"),
       desc: t("about.tm2Desc"),
-      img: "/images/testimonial-2.png",
+      img: "/images/avatar-jeanpierre.svg",
     },
     {
       name: t("about.tm3Name"),
       role: t("about.tm3Role"),
       desc: t("about.tm3Desc"),
-      img: "/images/testimonial-3.png",
+      img: "/images/avatar-adele.svg",
     },
     {
       name: t("about.tm4Name"),
       role: t("about.tm4Role"),
       desc: t("about.tm4Desc"),
-      img: "/images/testimonial-4.png",
+      img: "/images/avatar-michael.svg",
     },
   ];
 

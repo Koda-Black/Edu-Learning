@@ -97,7 +97,9 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                   className="w-10 h-10 rounded-xl object-contain"
                 />
                 <div>
-                  <h2 className="font-bold text-gray-800">Edu learning & Immersion</h2>
+                  <h2 className="font-bold text-gray-800">
+                    Edu learning & Immersion
+                  </h2>
                   <p className="text-xs text-gray-500">Admin Panel</p>
                 </div>
               </Link>

@@ -104,48 +104,51 @@ EduLearning/
 ## PAGE-BY-PAGE CONTENT MAP
 
 ### 1. HOMEPAGE (`/en` or `/fr`)
+
 **File:** `app/[locale]/page.tsx`
 **What visitors see (top to bottom):**
 
-| Section | Content |
-|---------|---------|
-| **Hero** | "Learn Languages, Master Communication" · "Global training for individuals and businesses" · 2 buttons: Explore Programs, Chat with Us · Microphone wave animation |
-| **Trust Bar** | "Trusted by learners from 50+ countries" · "Made in Cameroon" badge |
-| **About Snippet** | "Learning Built for Real Careers" · 3 pills: English & French, Corporate Training, Translation Services |
-| **Stats (animated)** | 97% Learner Satisfaction · 50 Courses Available · 3,000+ Active Learners · 25 Countries Reached |
-| **Programs Preview** | 3 cards: General English & French (Most Popular) · Business & Professional (Corporate) · Translation & Interpretation (Professional) |
-| **Projects** | 3 cards: Online Learning Platform · Corporate Training Portal · Marketing Education Website |
-| **Features** | 4 cards: Expert Instructors · Hands-On Projects · Career-Focused Curriculum · Recognized Certificates |
-| **Skills** | 12 learning outcomes in 2 columns (Structured Curriculum, Project Experience, Case Studies, Progress Tracking, Flexible Schedule, Career Assignments, Skill-Based Training, Industry Skills, Clear Goals, Industry Knowledge, Own Pace, Job-Ready Confidence) |
-| **Testimonials** | 4 reviews: Daniel Carter (Language Student) · Olivia Bennett (Marketing Professional) · Ethan Walker (Graduate Student) · Sophia Turner (Translation Student) |
-| **Pricing** | 3 tiers: Basic ₦15,000/mo · Pro ₦30,000/mo (Most Popular) · Team ₦75,000/mo |
-| **FAQ** | 4 questions: Who can enroll? · Certificate? · Lifetime access? · Beginner friendly? |
-| **Final CTA** | "Start Your Learning Journey Today" with background image |
+| Section              | Content                                                                                                                                                                                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hero**             | "Learn Languages, Master Communication" · "Global training for individuals and businesses" · 2 buttons: Explore Programs, Chat with Us · Microphone wave animation                                                                                            |
+| **Trust Bar**        | "Trusted by learners from 50+ countries" · "Made in Cameroon" badge                                                                                                                                                                                           |
+| **About Snippet**    | "Learning Built for Real Careers" · 3 pills: English & French, Corporate Training, Translation Services                                                                                                                                                       |
+| **Stats (animated)** | 97% Learner Satisfaction · 50 Courses Available · 3,000+ Active Learners · 25 Countries Reached                                                                                                                                                               |
+| **Programs Preview** | 3 cards: General English & French (Most Popular) · Business & Professional (Corporate) · Translation & Interpretation (Professional)                                                                                                                          |
+| **Projects**         | 3 cards: Online Learning Platform · Corporate Training Portal · Marketing Education Website                                                                                                                                                                   |
+| **Features**         | 4 cards: Expert Instructors · Hands-On Projects · Career-Focused Curriculum · Recognized Certificates                                                                                                                                                         |
+| **Skills**           | 12 learning outcomes in 2 columns (Structured Curriculum, Project Experience, Case Studies, Progress Tracking, Flexible Schedule, Career Assignments, Skill-Based Training, Industry Skills, Clear Goals, Industry Knowledge, Own Pace, Job-Ready Confidence) |
+| **Testimonials**     | 4 reviews: Daniel Carter (Language Student) · Olivia Bennett (Marketing Professional) · Ethan Walker (Graduate Student) · Sophia Turner (Translation Student)                                                                                                 |
+| **Pricing**          | 3 tiers: Basic ₦15,000/mo · Pro ₦30,000/mo (Most Popular) · Team ₦75,000/mo                                                                                                                                                                                   |
+| **FAQ**              | 4 questions: Who can enroll? · Certificate? · Lifetime access? · Beginner friendly?                                                                                                                                                                           |
+| **Final CTA**        | "Start Your Learning Journey Today" with background image                                                                                                                                                                                                     |
 
 ---
 
 ### 2. PROGRAMS PAGE (`/en/programs`)
+
 **File:** `app/[locale]/programs/page.tsx`
 
 **9 Program Cards (filterable by level):**
 
-| Program | Level | Duration | Format | Price |
-|---------|-------|----------|--------|-------|
-| General English | Beginner | 3 months | Online / In-person | ₦35,000 |
-| General French | Beginner | 3 months | Online / In-person | ₦35,000 |
-| Business English | Intermediate | 4 months | Online / In-person | ₦55,000 |
-| Business French | Intermediate | 4 months | Online / In-person | ₦55,000 |
-| Advanced Conversation | Advanced | 2 months | Online | ₦40,000 |
-| Exam Preparation (IELTS/DELF/TEF) | Advanced | 3 months | Online / In-person | ₦65,000 |
-| Kids & Teens English | Beginner | Ongoing | Online / In-person | ₦25,000 |
-| Corporate Training | Custom | Custom | On-site / Virtual | Custom |
-| Intensive Immersion | All | 1 month | In-person | ₦120,000 |
+| Program                           | Level        | Duration | Format             | Price    |
+| --------------------------------- | ------------ | -------- | ------------------ | -------- |
+| General English                   | Beginner     | 3 months | Online / In-person | ₦35,000  |
+| General French                    | Beginner     | 3 months | Online / In-person | ₦35,000  |
+| Business English                  | Intermediate | 4 months | Online / In-person | ₦55,000  |
+| Business French                   | Intermediate | 4 months | Online / In-person | ₦55,000  |
+| Advanced Conversation             | Advanced     | 2 months | Online             | ₦40,000  |
+| Exam Preparation (IELTS/DELF/TEF) | Advanced     | 3 months | Online / In-person | ₦65,000  |
+| Kids & Teens English              | Beginner     | Ongoing  | Online / In-person | ₦25,000  |
+| Corporate Training                | Custom       | Custom   | On-site / Virtual  | Custom   |
+| Intensive Immersion               | All          | 1 month  | In-person          | ₦120,000 |
 
 Each card has a "Register Now" button linking to WhatsApp.
 
 ---
 
 ### 3. CORPORATE TRAINING PAGE (`/en/corporate`)
+
 **File:** `app/[locale]/corporate/page.tsx`
 
 - **Hero:** "Corporate Training & Consulting" · "Solutions for modern teams" · "Get a Free Consultation" button
@@ -157,6 +160,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 ---
 
 ### 4. TRANSLATION PAGE (`/en/translation`)
+
 **File:** `app/[locale]/translation/page.tsx`
 
 - **Hero:** "Translation & Interpretation Services" · "Professional quality, fast turnaround"
@@ -167,6 +171,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 ---
 
 ### 5. PARTNERSHIPS PAGE (`/en/partnerships`)
+
 **File:** `app/[locale]/partnerships/page.tsx`
 
 - **Hero:** "Become a Knowledge Partner"
@@ -179,6 +184,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 ---
 
 ### 6. ABOUT PAGE (`/en/about`)
+
 **File:** `app/[locale]/about/page.tsx`
 
 - **Hero:** "Empowering individuals and organizations with language skills that transform careers and open doors."
@@ -187,7 +193,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 - **Story:** Founded with belief that language is the key to opportunity. Grew from small tutoring initiative to serving 25+ countries.
 - **4 Values:** Excellence · Accessibility · Innovation · Impact
 - **4 Team Members:**
-  - Sarah Johnson — Founder & CEO (15+ years in language education)
+  - Talom Mickael — Founder & CEO (15+ years in language education)
   - Jean-Pierre Moreau — Head of French Programs (native French, DELF examiner)
   - Adele Nwachukwu — Corporate Training Director (corporate communication specialist)
   - Michael Chen — Head of Translation Services (10+ years translation & localization)
@@ -196,22 +202,24 @@ Each card has a "Register Now" button linking to WhatsApp.
 ---
 
 ### 7. BLOG PAGE (`/en/blog`)
+
 **File:** `app/[locale]/blog/page.tsx`
 
 **6 Blog Posts:**
 
-| Title | Date | Category |
-|-------|------|----------|
-| 5 Tips to Learn a New Language Faster | Mar 15, 2026 | Learning Tips |
-| Why Bilingualism Boosts Your Career | Mar 10, 2026 | Career |
-| The Future of Corporate Language Training | Mar 5, 2026 | Corporate |
-| French vs English: Which to Learn First? | Feb 28, 2026 | Guide |
-| How Immersive Learning Changes Everything | Feb 20, 2026 | Research |
-| Translation Industry Trends in 2026 | Feb 15, 2026 | Translation |
+| Title                                     | Date         | Category      |
+| ----------------------------------------- | ------------ | ------------- |
+| 5 Tips to Learn a New Language Faster     | Mar 15, 2026 | Learning Tips |
+| Why Bilingualism Boosts Your Career       | Mar 10, 2026 | Career        |
+| The Future of Corporate Language Training | Mar 5, 2026  | Corporate     |
+| French vs English: Which to Learn First?  | Feb 28, 2026 | Guide         |
+| How Immersive Learning Changes Everything | Feb 20, 2026 | Research      |
+| Translation Industry Trends in 2026       | Feb 15, 2026 | Translation   |
 
 ---
 
 ### 8. CONTACT PAGE (`/en/contact`)
+
 **File:** `app/[locale]/contact/page.tsx`
 
 - **Hero:** "Get In Touch" · "We're here to help. Reach out anytime."
@@ -225,6 +233,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 ## GLOBAL COMPONENTS (appear on every page)
 
 ### Header (`components/Header.tsx`)
+
 - Fixed position with blur-on-scroll
 - Logo + "Edu Learning"
 - Nav links: Programs · Corporate · Translation · Partnerships · Blog · About
@@ -233,6 +242,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 - Mobile: hamburger menu with animated icon
 
 ### Footer (`components/Footer.tsx`)
+
 - Logo + tagline: "Master Languages. Build Your Future."
 - Page links: Home · About · Programs · Corporate · Blog
 - Support links: Contact · Partnerships · Translation
@@ -242,6 +252,7 @@ Each card has a "Register Now" button linking to WhatsApp.
 - Terms of Service · Privacy Policy
 
 ### ChatBot (`components/ChatBot.tsx`)
+
 - Floating green button (bottom-right corner)
 - 20 Q&A patterns covering: programs, pricing, corporate, translation, partnerships, certificates, contact, about, schedule, kids, exams
 - Quick action buttons: Programs · Pricing · Corporate · WhatsApp
@@ -253,29 +264,29 @@ Each card has a "Register Now" button linking to WhatsApp.
 
 **Authentication:** Password = `eduadmin2024` (stored in sessionStorage)
 
-| Page | URL | Function |
-|------|-----|----------|
-| Dashboard | `/admin` | 6 stat cards (Total Requests, Quotes, Corporate, Registrations, Blog Posts, Emails) + quick action links |
-| Blog Editor | `/admin/blog` | Create/edit/delete blog posts with EN+FR fields, slug, author, published toggle |
-| Pricing | `/admin/pricing` | Edit pricing for homepage tiers, programs, corporate, and translation |
-| Requests | `/admin/requests` | View/filter/delete all form submissions (quote, corporate, registration) |
-| Email List | `/admin/emails` | View email contacts collected from forms |
+| Page        | URL               | Function                                                                                                 |
+| ----------- | ----------------- | -------------------------------------------------------------------------------------------------------- |
+| Dashboard   | `/admin`          | 6 stat cards (Total Requests, Quotes, Corporate, Registrations, Blog Posts, Emails) + quick action links |
+| Blog Editor | `/admin/blog`     | Create/edit/delete blog posts with EN+FR fields, slug, author, published toggle                          |
+| Pricing     | `/admin/pricing`  | Edit pricing for homepage tiers, programs, corporate, and translation                                    |
+| Requests    | `/admin/requests` | View/filter/delete all form submissions (quote, corporate, registration)                                 |
+| Email List  | `/admin/emails`   | View email contacts collected from forms                                                                 |
 
 ---
 
 ## API ENDPOINTS
 
-| Endpoint | Method | Purpose |
-|----------|--------|---------|
-| `/api/program-registration` | POST | Student program enrollment |
-| `/api/quote-request` | POST | Translation quote + file upload |
-| `/api/corporate-consultation` | POST | Corporate training inquiry with pricing |
-| `/api/upload` | POST | General file upload (10MB limit) |
-| `/api/admin/stats` | GET | Dashboard statistics |
-| `/api/admin/blog` | GET/POST/DELETE | Blog post management |
-| `/api/admin/pricing` | GET/POST | Pricing configuration |
-| `/api/admin/requests` | GET/DELETE | Form submissions |
-| `/api/admin/emails` | GET/POST | Email contact list |
+| Endpoint                      | Method          | Purpose                                 |
+| ----------------------------- | --------------- | --------------------------------------- |
+| `/api/program-registration`   | POST            | Student program enrollment              |
+| `/api/quote-request`          | POST            | Translation quote + file upload         |
+| `/api/corporate-consultation` | POST            | Corporate training inquiry with pricing |
+| `/api/upload`                 | POST            | General file upload (10MB limit)        |
+| `/api/admin/stats`            | GET             | Dashboard statistics                    |
+| `/api/admin/blog`             | GET/POST/DELETE | Blog post management                    |
+| `/api/admin/pricing`          | GET/POST        | Pricing configuration                   |
+| `/api/admin/requests`         | GET/DELETE      | Form submissions                        |
+| `/api/admin/emails`           | GET/POST        | Email contact list                      |
 
 ---
 
@@ -613,7 +624,7 @@ Each card has a "Register Now" button linking to WhatsApp.
     "v4Title": "Impact",
     "v4Desc": "Everything we do is measured by the real-world results our learners achieve.",
     "teamTitle": "Our Team",
-    "tm1Name": "Sarah Johnson",
+    "tm1Name": "Talom Mickael",
     "tm1Role": "Founder & CEO",
     "tm1Desc": "15+ years in language education and international training.",
     "tm2Name": "Jean-Pierre Moreau",
@@ -717,35 +728,39 @@ Each card has a "Register Now" button linking to WhatsApp.
 ## PRICING SUMMARY (ALL IN NAIRA ₦)
 
 ### Subscription Plans (Homepage)
-| Plan | Price | Includes |
-|------|-------|----------|
-| Basic | ₦15,000/month | Selected courses, community, resources, certificates |
-| Pro | ₦30,000/month | All courses, projects, templates, certificates, advanced projects |
-| Team | ₦75,000/month | Everything in Pro + team dashboard, progress tracking, admin, dedicated support |
+
+| Plan  | Price         | Includes                                                                        |
+| ----- | ------------- | ------------------------------------------------------------------------------- |
+| Basic | ₦15,000/month | Selected courses, community, resources, certificates                            |
+| Pro   | ₦30,000/month | All courses, projects, templates, certificates, advanced projects               |
+| Team  | ₦75,000/month | Everything in Pro + team dashboard, progress tracking, admin, dedicated support |
 
 ### Program Prices
-| Program | Price |
-|---------|-------|
-| General English/French | ₦35,000 |
-| Business English/French | ₦55,000 |
-| Advanced Conversation | ₦40,000 |
-| Exam Preparation | ₦65,000 |
-| Kids & Teens | ₦25,000 |
-| Corporate Training | Custom quote |
-| Intensive Immersion | ₦120,000 |
+
+| Program                 | Price        |
+| ----------------------- | ------------ |
+| General English/French  | ₦35,000      |
+| Business English/French | ₦55,000      |
+| Advanced Conversation   | ₦40,000      |
+| Exam Preparation        | ₦65,000      |
+| Kids & Teens            | ₦25,000      |
+| Corporate Training      | Custom quote |
+| Intensive Immersion     | ₦120,000     |
 
 ### Translation Rates
-| Type | Rate per Word |
-|------|--------------|
-| Simple | ₦50 |
-| Technical | ₦80 |
-| Legal | ₦100 |
+
+| Type      | Rate per Word |
+| --------- | ------------- |
+| Simple    | ₦50           |
+| Technical | ₦80           |
+| Legal     | ₦100          |
 
 Speed multipliers: Standard (1x) · Semi-Express (1.5x) · Express (2x)
 
 ---
 
 ## KEY INTEGRATIONS
+
 - **WhatsApp:** All CTAs link to wa.me/2348100835573 with pre-filled messages
 - **Plausible Analytics:** Script in locale layout (needs domain config)
 - **Google AdSense:** Placeholder ready in locale layout (commented out)

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" rx="20" fill="#F3FAF5"/>
+  <!-- Pencil writing -->
+  <rect x="250" y="80" width="8" height="160" rx="2" fill="#0D883C" opacity="0.2" transform="rotate(25 254 160)"/>
+  <path d="M315 242l-15 25 25-15z" fill="#003B2D" opacity="0.15"/>
+  <!-- Notebook -->
+  <rect x="140" y="120" width="180" height="220" rx="8" fill="white" stroke="#0D883C" stroke-width="1.5" opacity="0.25"/>
+  <line x1="140" y1="150" x2="320" y2="150" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <line x1="140" y1="175" x2="320" y2="175" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <line x1="140" y1="200" x2="320" y2="200" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <line x1="140" y1="225" x2="320" y2="225" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <line x1="140" y1="250" x2="320" y2="250" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <line x1="140" y1="275" x2="320" y2="275" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <line x1="140" y1="300" x2="320" y2="300" stroke="#0D883C" stroke-width="0.5" opacity="0.1"/>
+  <!-- Text lines -->
+  <rect x="160" y="158" width="100" height="6" rx="3" fill="#003B2D" opacity="0.12"/>
+  <rect x="160" y="183" width="130" height="5" rx="2.5" fill="#0D883C" opacity="0.08"/>
+  <rect x="160" y="208" width="110" height="5" rx="2.5" fill="#0D883C" opacity="0.08"/>
+  <rect x="160" y="233" width="120" height="5" rx="2.5" fill="#0D883C" opacity="0.08"/>
+  <!-- Speech bubbles -->
+  <rect x="380" y="100" width="140" height="60" rx="12" fill="#0D883C" opacity="0.1"/>
+  <text x="405" y="136" font-family="system-ui" font-size="16" fill="#003B2D" opacity="0.25" font-weight="600">Blog</text>
+  <rect x="400" y="200" width="120" height="50" rx="10" fill="#003B2D" opacity="0.08"/>
+  <!-- Decorative -->
+  <circle cx="500" cy="320" r="20" fill="#0D883C" opacity="0.06"/>
+  <circle cx="80" cy="80" r="15" fill="#003B2D" opacity="0.06"/>
+  <path d="M60 360 l6-6 6 6 6-6 6 6 6-6 6 6" stroke="#0D883C" stroke-width="1.5" fill="none" opacity="0.12"/>
+</svg>

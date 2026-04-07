@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   description:
     "CEFR-aligned language training in English, French & German. Professional translation, interpretation & proofreading services. Corporate programs available.",
   metadataBase: new URL("https://edu-learning-kappa.vercel.app"),
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     title: "Edu learning & Immersion",
     description:
@@ -57,7 +64,6 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

@@ -9,10 +9,9 @@ export async function getNairaRate(): Promise<number> {
     return cachedRate;
   }
   try {
-    const res = await fetch(
-      "https://api.exchangerate-api.com/v4/latest/USD",
-      { next: { revalidate: 3600 } },
-    );
+    const res = await fetch("https://api.exchangerate-api.com/v4/latest/USD", {
+      next: { revalidate: 3600 },
+    });
     if (!res.ok) throw new Error("API error");
     const data = await res.json();
     const rate = data?.rates?.NGN;

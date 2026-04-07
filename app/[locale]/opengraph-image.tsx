@@ -7,86 +7,94 @@ export const contentType = "image/png";
 
 export default async function Image() {
   return new ImageResponse(
-    (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        height: "100%",
+        background: "linear-gradient(135deg, #003B2D 0%, #0D883C 100%)",
+        padding: "60px",
+      }}
+    >
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "100%",
-          height: "100%",
-          background: "linear-gradient(135deg, #003B2D 0%, #0D883C 100%)",
-          padding: "60px",
+          fontSize: 54,
+          fontWeight: 700,
+          color: "white",
+          lineHeight: 1.2,
+          textAlign: "center",
+          marginBottom: "40px",
+        }}
+      >
+        Edu learning &amp; Immersion
+      </div>
+      <div
+        style={{
+          fontSize: 28,
+          color: "rgba(255,255,255,0.8)",
+          textAlign: "center",
+          maxWidth: "800px",
+          lineHeight: 1.5,
+        }}
+      >
+        Bridging Languages and Cultures for Global Collaboration
+      </div>
+      <div
+        style={{
+          display: "flex",
+          gap: "20px",
+          marginTop: "40px",
         }}
       >
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "20px",
-            marginBottom: "40px",
+            padding: "10px 24px",
+            borderRadius: "40px",
+            background: "rgba(255,255,255,0.15)",
+            color: "white",
+            fontSize: 18,
           }}
         >
-          <div
-            style={{
-              fontSize: 54,
-              fontWeight: 700,
-              color: "white",
-              lineHeight: 1.2,
-            }}
-          >
-            Edu{" "}
-            <span style={{ color: "#A5F3C1" }}>learning</span>
-            {" & "}
-            <span style={{ color: "#A5F3C1" }}>Immersion</span>
-          </div>
+          English
         </div>
         <div
           style={{
-            fontSize: 28,
-            color: "rgba(255,255,255,0.8)",
-            textAlign: "center",
-            maxWidth: "800px",
-            lineHeight: 1.5,
+            padding: "10px 24px",
+            borderRadius: "40px",
+            background: "rgba(255,255,255,0.15)",
+            color: "white",
+            fontSize: 18,
           }}
         >
-          Bridging Languages and Cultures for Global Collaboration
+          French
         </div>
         <div
           style={{
-            display: "flex",
-            gap: "20px",
-            marginTop: "40px",
+            padding: "10px 24px",
+            borderRadius: "40px",
+            background: "rgba(255,255,255,0.15)",
+            color: "white",
+            fontSize: 18,
           }}
         >
-          {["English", "French", "German"].map((lang) => (
-            <div
-              key={lang}
-              style={{
-                padding: "10px 24px",
-                borderRadius: "40px",
-                background: "rgba(255,255,255,0.15)",
-                color: "white",
-                fontSize: 18,
-              }}
-            >
-              {lang}
-            </div>
-          ))}
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            bottom: "30px",
-            fontSize: 16,
-            color: "rgba(255,255,255,0.5)",
-          }}
-        >
-          contact@edulearningimmersion.org
+          German
         </div>
       </div>
-    ),
+      <div
+        style={{
+          position: "absolute",
+          bottom: "30px",
+          fontSize: 16,
+          color: "rgba(255,255,255,0.5)",
+        }}
+      >
+        contact@edulearningimmersion.org
+      </div>
+    </div>,
     { ...size },
   );
 }

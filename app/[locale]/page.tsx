@@ -198,7 +198,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t1Text"),
       name: t("homepage.testimonials.t1Name"),
       role: t("homepage.testimonials.t1Role"),
-      avatar: "/images/testimonial-1.png",
+      avatar: "/images/avatar-uchenna.svg",
       tags: [
         t("homepage.testimonials.t1Tag1"),
         t("homepage.testimonials.t1Tag2"),
@@ -209,7 +209,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t2Text"),
       name: t("homepage.testimonials.t2Name"),
       role: t("homepage.testimonials.t2Role"),
-      avatar: "/images/testimonial-2.png",
+      avatar: "/images/avatar-kingsley.svg",
       tags: [
         t("homepage.testimonials.t2Tag1"),
         t("homepage.testimonials.t2Tag2"),
@@ -220,7 +220,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t3Text"),
       name: t("homepage.testimonials.t3Name"),
       role: t("homepage.testimonials.t3Role"),
-      avatar: "/images/testimonial-3.png",
+      avatar: "/images/avatar-esther.svg",
       tags: [
         t("homepage.testimonials.t3Tag1"),
         t("homepage.testimonials.t3Tag2"),
@@ -231,7 +231,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t4Text"),
       name: t("homepage.testimonials.t4Name"),
       role: t("homepage.testimonials.t4Role"),
-      avatar: "/images/testimonial-4.png",
+      avatar: "/images/avatar-amina.svg",
       tags: [
         t("homepage.testimonials.t4Tag1"),
         t("homepage.testimonials.t4Tag2"),
@@ -320,12 +320,6 @@ export default function HomePage() {
       q: t("homepage.faq.q29"),
       a: t("homepage.faq.a29"),
     },
-  ];
-
-  const projects = [
-    { title: t("homepage.projects.p1"), img: "/images/project-1.png" },
-    { title: t("homepage.projects.p2"), img: "/images/project-2.png" },
-    { title: t("homepage.projects.p3"), img: "/images/project-3.png" },
   ];
 
   return (
@@ -498,33 +492,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ━━━ TRUST BAR ━━━ */}
-      <RevealSection>
-        <section className="py-5 border-y border-[#EAF0EF]">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <p className="text-[13px] text-[#4F635E] font-medium whitespace-nowrap">
-                {t("homepage.trust.title")}
-              </p>
-              <div className="flex items-center gap-10 overflow-hidden">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <img
-                    key={i}
-                    src={`/images/logo-${i}.svg`}
-                    alt={`Partner ${i}`}
-                    className="h-[30px] w-auto opacity-50 grayscale"
-                  />
-                ))}
-              </div>
-              <div className="flex items-center gap-2 text-[13px] text-[#4F635E]">
-                <span className="w-2 h-2 rounded-full bg-[#0D883C]" />
-                {t("homepage.trust.madeIn")}
-              </div>
-            </div>
-          </div>
-        </section>
-      </RevealSection>
 
       {/* ━━━ ABOUT ━━━ */}
       <RevealSection>
@@ -709,47 +676,6 @@ export default function HomePage() {
                     <p className="text-[14px] text-[#4F635E] leading-[1.6]">
                       {prog.desc}
                     </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </RevealSection>
-
-      {/* ━━━ PROJECTS ━━━ */}
-      <RevealSection>
-        <section className="py-[60px]">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[200px] items-start mb-[60px]">
-              <h2 className="flex-1 text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
-                {t("homepage.projects.title")}
-              </h2>
-              <p className="flex-1 max-w-[385px] text-[16px] text-[#4F635E] leading-[1.6]">
-                {t("homepage.projects.desc")}
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {projects.map((proj, i) => (
-                <div
-                  key={i}
-                  className="group bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="relative aspect-[1.35] overflow-hidden">
-                    <img
-                      src={proj.img}
-                      alt={proj.title}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute top-4 left-4 text-white/50 text-xs">
-                      &copy; 2026 &ndash; Edu learning & Immersion
-                    </div>
-                    <div className="absolute bottom-5 left-5 right-5">
-                      <h4 className="text-[20px] font-semibold text-white leading-[1.3]">
-                        {proj.title}
-                      </h4>
-                    </div>
                   </div>
                 </div>
               ))}

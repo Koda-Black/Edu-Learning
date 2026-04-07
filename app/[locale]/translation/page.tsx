@@ -29,16 +29,44 @@ export default function TranslationPage() {
   ];
 
   const interpretationRates = [
-    { title: t("translation.i1Title"), standard: t("translation.i1Standard"), urgent: t("translation.i1Urgent") },
-    { title: t("translation.i2Title"), standard: t("translation.i2Standard"), urgent: t("translation.i2Urgent") },
-    { title: t("translation.i3Title"), standard: t("translation.i3Standard"), urgent: t("translation.i3Urgent") },
-    { title: t("translation.i4Title"), standard: t("translation.i4Standard"), urgent: t("translation.i4Urgent") },
+    {
+      title: t("translation.i1Title"),
+      standard: t("translation.i1Standard"),
+      urgent: t("translation.i1Urgent"),
+    },
+    {
+      title: t("translation.i2Title"),
+      standard: t("translation.i2Standard"),
+      urgent: t("translation.i2Urgent"),
+    },
+    {
+      title: t("translation.i3Title"),
+      standard: t("translation.i3Standard"),
+      urgent: t("translation.i3Urgent"),
+    },
+    {
+      title: t("translation.i4Title"),
+      standard: t("translation.i4Standard"),
+      urgent: t("translation.i4Urgent"),
+    },
   ];
 
   const proofreadingRates = [
-    { title: t("translation.pr1Title"), col1: t("translation.pr1General"), col2: t("translation.pr1Academic") },
-    { title: t("translation.pr2Title"), col1: t("translation.pr2General"), col2: t("translation.pr2Business") },
-    { title: t("translation.pr3Title"), col1: t("translation.pr3General"), col2: t("translation.pr3Technical") },
+    {
+      title: t("translation.pr1Title"),
+      col1: t("translation.pr1General"),
+      col2: t("translation.pr1Academic"),
+    },
+    {
+      title: t("translation.pr2Title"),
+      col1: t("translation.pr2General"),
+      col2: t("translation.pr2Business"),
+    },
+    {
+      title: t("translation.pr3Title"),
+      col1: t("translation.pr3General"),
+      col2: t("translation.pr3Technical"),
+    },
   ];
 
   return (
@@ -168,14 +196,27 @@ export default function TranslationPage() {
             <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden">
               <div className="grid grid-cols-3 gap-0 bg-[#003B2D] text-white text-[14px] font-semibold">
                 <div className="p-4">Service</div>
-                <div className="p-4 text-center">{t("translation.standardRate")}</div>
-                <div className="p-4 text-center">{t("translation.urgentRate")}</div>
+                <div className="p-4 text-center">
+                  {t("translation.standardRate")}
+                </div>
+                <div className="p-4 text-center">
+                  {t("translation.urgentRate")}
+                </div>
               </div>
               {interpretationRates.map((rate, i) => (
-                <div key={i} className={`grid grid-cols-3 gap-0 text-[14px] ${i % 2 === 0 ? 'bg-[#F3FAF5]' : 'bg-white'}`}>
-                  <div className="p-4 font-medium text-[#0A0915]">{rate.title}</div>
-                  <div className="p-4 text-center text-[#4F635E]">{rate.standard}</div>
-                  <div className="p-4 text-center text-[#4F635E]">{rate.urgent}</div>
+                <div
+                  key={i}
+                  className={`grid grid-cols-3 gap-0 text-[14px] ${i % 2 === 0 ? "bg-[#F3FAF5]" : "bg-white"}`}
+                >
+                  <div className="p-4 font-medium text-[#0A0915]">
+                    {rate.title}
+                  </div>
+                  <div className="p-4 text-center text-[#4F635E]">
+                    {rate.standard}
+                  </div>
+                  <div className="p-4 text-center text-[#4F635E]">
+                    {rate.urgent}
+                  </div>
                 </div>
               ))}
             </div>
@@ -198,8 +239,13 @@ export default function TranslationPage() {
           <div className="max-w-[800px] mx-auto">
             <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden mb-6">
               {proofreadingRates.map((rate, i) => (
-                <div key={i} className={`p-6 ${i < proofreadingRates.length - 1 ? 'border-b border-[#EAF0EF]' : ''}`}>
-                  <h3 className="text-[16px] font-semibold text-[#0A0915] mb-2">{rate.title}</h3>
+                <div
+                  key={i}
+                  className={`p-6 ${i < proofreadingRates.length - 1 ? "border-b border-[#EAF0EF]" : ""}`}
+                >
+                  <h3 className="text-[16px] font-semibold text-[#0A0915] mb-2">
+                    {rate.title}
+                  </h3>
                   <div className="flex gap-6 text-[14px] text-[#4F635E]">
                     <span>{rate.col1}</span>
                     <span>{rate.col2}</span>
@@ -208,7 +254,9 @@ export default function TranslationPage() {
               ))}
             </div>
             <div className="bg-white rounded-[20px] border border-[#EAF0EF] p-6">
-              <h3 className="text-[16px] font-semibold text-[#0A0915] mb-3">{t("translation.expressTitle")}</h3>
+              <h3 className="text-[16px] font-semibold text-[#0A0915] mb-3">
+                {t("translation.expressTitle")}
+              </h3>
               <div className="space-y-2 text-[14px] text-[#4F635E]">
                 <p>{t("translation.express24h")}</p>
                 <p>{t("translation.expressSameDay")}</p>
