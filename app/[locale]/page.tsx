@@ -198,7 +198,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t1Text"),
       name: t("homepage.testimonials.t1Name"),
       role: t("homepage.testimonials.t1Role"),
-      avatar: "/images/avatar-uchenna.svg",
+      avatar: "/images/testimonial-1.png",
       tags: [
         t("homepage.testimonials.t1Tag1"),
         t("homepage.testimonials.t1Tag2"),
@@ -209,7 +209,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t2Text"),
       name: t("homepage.testimonials.t2Name"),
       role: t("homepage.testimonials.t2Role"),
-      avatar: "/images/avatar-kingsley.svg",
+      avatar: "/images/testimonial-2.png",
       tags: [
         t("homepage.testimonials.t2Tag1"),
         t("homepage.testimonials.t2Tag2"),
@@ -220,7 +220,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t3Text"),
       name: t("homepage.testimonials.t3Name"),
       role: t("homepage.testimonials.t3Role"),
-      avatar: "/images/avatar-esther.svg",
+      avatar: "/images/testimonial-3.png",
       tags: [
         t("homepage.testimonials.t3Tag1"),
         t("homepage.testimonials.t3Tag2"),
@@ -231,7 +231,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t4Text"),
       name: t("homepage.testimonials.t4Name"),
       role: t("homepage.testimonials.t4Role"),
-      avatar: "/images/avatar-amina.svg",
+      avatar: "/images/testimonial-4.png",
       tags: [
         t("homepage.testimonials.t4Tag1"),
         t("homepage.testimonials.t4Tag2"),
@@ -335,8 +335,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="max-w-[1280px] mx-auto px-[30px] py-[140px] lg:py-[120px] relative z-10 w-full">
-          <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[78px] items-start">
+        <div className="max-w-[1280px] mx-auto px-[30px] py-20 lg:py-[120px] relative z-10 w-full">
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-[78px] items-start">
             {/* Left content */}
             <div className="flex-1 max-w-[547px] flex flex-col gap-[32px]">
               <div className="flex flex-col gap-[20px]">
@@ -495,9 +495,9 @@ export default function HomePage() {
 
       {/* ━━━ ABOUT ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[78px] items-start">
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-[78px] items-start">
               {/* Left text */}
               <div className="flex-1 max-w-[558px] flex flex-col gap-[32px]">
                 <div className="flex flex-col gap-[20px]">
@@ -590,7 +590,7 @@ export default function HomePage() {
 
       {/* ━━━ STATS ━━━ */}
       <RevealSection>
-        <section className="py-[60px]">
+        <section className="py-6 lg:py-10">
           <div className="max-w-[1280px] mx-auto px-[30px]">
             <div className="w-full h-px bg-gradient-to-r from-transparent via-[#005843]/40 to-transparent mb-8" />
             <div className="flex flex-col sm:flex-row items-center justify-center gap-0 py-4">
@@ -646,9 +646,9 @@ export default function HomePage() {
 
       {/* ━━━ PROGRAMS ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[200px] items-start mb-[60px]">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-[200px] items-start mb-10 lg:mb-14">
               <h2 className="flex-1 text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
                 {t("homepage.programs.title")}
               </h2>
@@ -686,9 +686,9 @@ export default function HomePage() {
 
       {/* ━━━ FEATURES (Accordion layout matching reference) ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[52px] items-start">
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-[52px] items-start">
               {/* Left: Image */}
               <div className="flex-1">
                 <img
@@ -746,9 +746,9 @@ export default function HomePage() {
 
       {/* ━━━ SKILLS ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="text-center mb-[60px]">
+            <div className="text-center mb-10 lg:mb-14">
               <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5">
                 {t("homepage.skills.title")}
               </h2>
@@ -795,9 +795,9 @@ export default function HomePage() {
 
       {/* ━━━ TESTIMONIALS ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[60px] items-start">
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
               {/* Left: heading + CTA */}
               <div className="lg:max-w-[350px] flex flex-col gap-[20px] lg:sticky lg:top-32">
                 <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
@@ -864,9 +864,9 @@ export default function HomePage() {
 
       {/* ━━━ PRICING ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[40px] items-start mb-[60px]">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start mb-10 lg:mb-14">
               <h2 className="flex-1 text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
                 {t("homepage.pricing.title")}
               </h2>
@@ -968,12 +968,12 @@ export default function HomePage() {
 
       {/* ━━━ FAQ ━━━ */}
       <RevealSection>
-        <section className="py-[60px] lg:py-[120px]">
+        <section className="py-12 lg:py-20">
           <div className="max-w-[1280px] mx-auto px-[30px]">
-            <div className="flex flex-col lg:flex-row gap-[40px] items-start">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
               {/* Left: Heading + FAQ grid */}
-              <div className="flex-1 flex flex-col gap-[32px]">
-                <div className="flex flex-col lg:flex-row gap-[40px]">
+              <div className="flex-1 flex flex-col gap-8">
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
                   <div className="flex flex-col gap-[20px] lg:max-w-[280px]">
                     <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
                       {t("homepage.faq.title")}
@@ -1033,7 +1033,7 @@ export default function HomePage() {
 
       {/* ━━━ CTA ━━━ */}
       <RevealSection>
-        <section className="relative py-[120px] overflow-hidden">
+        <section className="relative py-16 lg:py-24 overflow-hidden">
           <div className="absolute inset-0">
             <img
               src="/images/cta-person.png"

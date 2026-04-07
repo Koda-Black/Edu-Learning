@@ -26,12 +26,21 @@ export const metadata: Metadata = {
       "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
     siteName: "Edu learning & Immersion",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Edu learning & Immersion",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Edu learning & Immersion",
     description:
       "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
+    images: ["/images/og-image.png"],
   },
 };
 
