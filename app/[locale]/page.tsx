@@ -198,7 +198,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t1Text"),
       name: t("homepage.testimonials.t1Name"),
       role: t("homepage.testimonials.t1Role"),
-      avatar: "/images/testimonial-1.png",
+      avatar: "/images/testimonials/EBELE.webp",
       tags: [
         t("homepage.testimonials.t1Tag1"),
         t("homepage.testimonials.t1Tag2"),
@@ -209,7 +209,7 @@ export default function HomePage() {
       text: t("homepage.testimonials.t2Text"),
       name: t("homepage.testimonials.t2Name"),
       role: t("homepage.testimonials.t2Role"),
-      avatar: "/images/testimonial-2.png",
+      avatar: "/images/testimonials/BOLA.webp",
       tags: [
         t("homepage.testimonials.t2Tag1"),
         t("homepage.testimonials.t2Tag2"),
@@ -231,10 +231,21 @@ export default function HomePage() {
       text: t("homepage.testimonials.t4Text"),
       name: t("homepage.testimonials.t4Name"),
       role: t("homepage.testimonials.t4Role"),
-      avatar: "/images/testimonial-4.png",
+      avatar: "/images/peoples/adult-man.webp",
       tags: [
         t("homepage.testimonials.t4Tag1"),
         t("homepage.testimonials.t4Tag2"),
+      ],
+    },
+    {
+      title: t("homepage.testimonials.t5Title"),
+      text: t("homepage.testimonials.t5Text"),
+      name: t("homepage.testimonials.t5Name"),
+      role: t("homepage.testimonials.t5Role"),
+      avatar: "/images/peoples/adult-girl.webp",
+      tags: [
+        t("homepage.testimonials.t5Tag1"),
+        t("homepage.testimonials.t5Tag2"),
       ],
     },
   ];
@@ -335,7 +346,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="max-w-[1280px] mx-auto px-[30px] py-20 lg:py-[120px] relative z-10 w-full">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] py-20 lg:py-[120px] relative z-10 w-full">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-[78px] items-start">
             {/* Left content */}
             <div className="flex-1 max-w-[547px] flex flex-col gap-[32px]">
@@ -395,7 +406,7 @@ export default function HomePage() {
               <div className="flex flex-col gap-4 flex-1">
                 <div className="rounded-[20px] overflow-hidden relative">
                   <img
-                    src="/images/hero-main.png"
+                    src="/images/peoples/hero-girl.webp"
                     alt="Students learning"
                     className="w-full h-auto object-cover rounded-[20px]"
                   />
@@ -404,7 +415,7 @@ export default function HomePage() {
                 <div className="bg-[#0D883C] rounded-[20px] p-5 flex flex-col gap-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white/60 text-xs">
-                      &copy; 2026 &ndash; Edu learning & Immersion
+                      &copy; 2026 &ndash; Edu Learning & Immersion
                     </span>
                     <span className="inline-flex px-4 py-1 rounded-[50px] bg-[#F3FAF5] text-[#003B2D] text-xs font-medium">
                       {t("homepage.hero.languageTag")}
@@ -424,7 +435,7 @@ export default function HomePage() {
                 <div className="bg-[#003B2D] rounded-[20px] p-5 flex flex-col gap-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white/60 text-xs">
-                      &copy; 2026 &ndash; Edu learning & Immersion
+                      &copy; 2026 &ndash; Edu Learning & Immersion
                     </span>
                     <span className="text-white/60 text-xs">Best</span>
                   </div>
@@ -444,7 +455,7 @@ export default function HomePage() {
                 {/* Tall image */}
                 <div className="rounded-[20px] overflow-hidden relative flex-1">
                   <img
-                    src="/images/hero-tall.png"
+                    src="/images/peoples/hero-boy.webp"
                     alt="Interactive classroom"
                     className="w-full h-full object-cover rounded-[20px]"
                   />
@@ -460,7 +471,7 @@ export default function HomePage() {
             {/* Mobile hero image */}
             <div className="lg:hidden w-full">
               <img
-                src="/images/hero-main.png"
+                src="/images/peoples/hero-girl.webp"
                 alt="Students learning"
                 className="w-full rounded-[20px]"
               />
@@ -496,7 +507,7 @@ export default function HomePage() {
       {/* ━━━ ABOUT ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-[78px] items-start">
               {/* Left text */}
               <div className="flex-1 max-w-[558px] flex flex-col gap-[32px]">
@@ -533,7 +544,7 @@ export default function HomePage() {
               <div className="flex-1 max-w-[612px]">
                 <div className="relative rounded-[20px] overflow-visible">
                   <img
-                    src="/images/about-person.png"
+                    src="/images/peoples/young-man.webp"
                     alt="Learning"
                     className="w-full rounded-[20px]"
                   />
@@ -591,7 +602,7 @@ export default function HomePage() {
       {/* ━━━ STATS ━━━ */}
       <RevealSection>
         <section className="py-6 lg:py-10">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="w-full h-px bg-gradient-to-r from-transparent via-[#005843]/40 to-transparent mb-8" />
             <div className="flex flex-col sm:flex-row items-center justify-center gap-0 py-4">
               {[
@@ -647,7 +658,7 @@ export default function HomePage() {
       {/* ━━━ PROGRAMS ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-[200px] items-start mb-10 lg:mb-14">
               <h2 className="flex-1 text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
                 {t("homepage.programs.title")}
@@ -687,7 +698,7 @@ export default function HomePage() {
       {/* ━━━ FEATURES (Accordion layout matching reference) ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-[52px] items-start">
               {/* Left: Image */}
               <div className="flex-1">
@@ -747,7 +758,7 @@ export default function HomePage() {
       {/* ━━━ SKILLS ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="text-center mb-10 lg:mb-14">
               <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5">
                 {t("homepage.skills.title")}
@@ -796,7 +807,7 @@ export default function HomePage() {
       {/* ━━━ TESTIMONIALS ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
               {/* Left: heading + CTA */}
               <div className="lg:max-w-[350px] flex flex-col gap-[20px] lg:sticky lg:top-32">
@@ -865,7 +876,7 @@ export default function HomePage() {
       {/* ━━━ PRICING ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start mb-10 lg:mb-14">
               <h2 className="flex-1 text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em]">
                 {t("homepage.pricing.title")}
@@ -905,9 +916,7 @@ export default function HomePage() {
                     {plan.desc}
                   </p>
                   <a
-                    href={getWhatsAppUrl(
-                      `Hi, I'm interested in the ${plan.name} plan (${plan.price}${plan.period}). I'd like to get started!`,
-                    )}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd8BNy8jVCiD0LhYaOJZ76yhXmc_V6EPNAd74_AyPiZZCN3bA/viewform?usp=publish-editor"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center justify-center gap-2 px-6 py-3 rounded-[60px] text-[15px] font-semibold transition-all mb-6 ${
@@ -969,7 +978,7 @@ export default function HomePage() {
       {/* ━━━ FAQ ━━━ */}
       <RevealSection>
         <section className="py-12 lg:py-20">
-          <div className="max-w-[1280px] mx-auto px-[30px]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
               {/* Left: Heading + FAQ grid */}
               <div className="flex-1 flex flex-col gap-8">
@@ -983,7 +992,7 @@ export default function HomePage() {
                     </p>
                     <a
                       href={getWhatsAppUrl(
-                        "Hi, I have a question about Edu learning & Immersion programs and services.",
+                        "Hi, I have a question about Edu Learning & Immersion programs and services.",
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -1042,7 +1051,7 @@ export default function HomePage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
           </div>
-          <div className="max-w-[1280px] mx-auto px-[30px] relative z-10 text-center">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10 text-center">
             <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-white leading-[1.2] tracking-[-0.04em] max-w-[680px] mx-auto mb-5">
               {t("homepage.cta.title")}
             </h2>

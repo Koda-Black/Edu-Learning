@@ -17,7 +17,7 @@ export default function ContactPage() {
     {
       title: t("contact.whatsapp"),
       value: "+234 916 078 4634",
-      href: "https://wa.me/2349160784634?text=Hi%2C%20I%27d%20like%20to%20inquire%20about%20Edu%20learning%20%26%20Immersion%20services",
+      href: "https://wa.me/2349160784634?text=Hi%2C%20I%27d%20like%20to%20inquire%20about%20Edu%20Learning%20%26%20Immersion%20services",
       icon: "phone",
     },
   ];
@@ -33,7 +33,7 @@ export default function ContactPage() {
             <div className="absolute top-[200px] left-0 w-[300px] h-[400px] rounded-full bg-[#0D883C] blur-[120px]" />
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10">
           <div className="flex flex-col lg:flex-row gap-[60px] items-start">
             <div className="flex-1 max-w-[600px]">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-[13px] font-medium mb-6">
@@ -60,7 +60,7 @@ export default function ContactPage() {
 
       {/* Contact Methods */}
       <section className="pb-12">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="grid sm:grid-cols-2 gap-6 max-w-[700px]">
             {contactMethods.map((m, i) => (
               <a
@@ -113,9 +113,79 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Where to Find Us */}
+      <section className="py-[60px] lg:py-[80px] bg-[#F3FAF5]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-10 text-center">
+            {t("footer.whereToFindUs")}
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-[700px] mx-auto">
+            <div className="bg-white rounded-[20px] border border-[#EAF0EF] p-7 hover:border-[#0D883C]/40 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-[#F3FAF5] flex items-center justify-center text-[#0D883C] mb-4">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-[16px] font-semibold text-[#0A0915] mb-2">
+                Enugu Office
+              </h3>
+              <p className="text-[14px] text-[#4F635E] leading-[1.6]">
+                {t("footer.location1")}
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] border border-[#EAF0EF] p-7 hover:border-[#0D883C]/40 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-[#F3FAF5] flex items-center justify-center text-[#0D883C] mb-4">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-[16px] font-semibold text-[#0A0915] mb-2">
+                Lagos Office
+              </h3>
+              <p className="text-[14px] text-[#4F635E] leading-[1.6]">
+                {t("footer.location2")}
+              </p>
+            </div>
+          </div>
+          <p className="text-[14px] text-[#4F635E] text-center mt-6">
+            {t("footer.operateAcross")} {t("footer.operateRegions")}
+          </p>
+        </div>
+      </section>
+
       {/* Form */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[800px] mx-auto px-[30px]">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-[30px]">
           <div className="bg-[#F3FAF5] rounded-[20px] p-8 lg:p-10">
             <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
               {t("contact.form")}

@@ -152,7 +152,7 @@ export function ChatBot() {
       {/* Chat Window */}
       {isOpen && (
         <div
-          className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 bg-white rounded-[20px] shadow-2xl border border-[#EAF0EF] overflow-hidden animate-fade-in-up flex flex-col"
+          className="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-32px)] sm:w-96 max-w-96 bg-white rounded-[20px] shadow-2xl border border-[#EAF0EF] overflow-hidden animate-fade-in-up flex flex-col"
           style={{ maxHeight: "500px" }}
         >
           {/* Header */}

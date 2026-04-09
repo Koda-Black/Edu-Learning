@@ -47,25 +47,28 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-2.5 group">
+          <Link
+            href={`/${locale}`}
+            className="flex items-center gap-2 group shrink-0"
+          >
             <img
               src="/images/logo/LOGO.png"
-              alt="Edu learning & Immersion"
-              className="w-9 h-9 rounded-xl object-contain transition-transform group-hover:scale-105"
+              alt="Edu Learning & Immersion"
+              className="w-8 h-8 rounded-xl object-contain transition-transform group-hover:scale-105"
             />
-            <span className="text-[#0A0915] font-semibold text-sm sm:text-lg tracking-tight leading-tight">
-              Edu <span className="text-[#0D883C]">learning</span>
+            <span className="text-[#0A0915] font-semibold text-[13px] sm:text-[15px] tracking-tight leading-tight whitespace-nowrap">
+              Edu <span className="text-[#0D883C]">Learning</span>
               <span className="text-[#0D883C]"> & Immersion</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-0.5">
+          <div className="hidden lg:flex items-center gap-0">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={`/${locale}${link.href}`}
-                className="relative px-3 py-2 text-[13px] font-medium whitespace-nowrap text-[#4F635E] hover:text-[#0A0915] transition-colors rounded-full hover:bg-[#F3FAF5]"
+                className="relative px-2.5 py-2 text-[12px] font-medium whitespace-nowrap text-[#4F635E] hover:text-[#0A0915] transition-colors rounded-full hover:bg-[#F3FAF5]"
               >
                 {link.label}
               </Link>
@@ -101,7 +104,7 @@ export function Header() {
             {/* CTA button - desktop only */}
             <Link
               href={`/${locale}/contact`}
-              className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-[#0D883C] text-white rounded-full text-sm font-semibold hover:bg-[#10a34a] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#0D883C]/25"
+              className="hidden lg:inline-flex items-center gap-2 px-4 py-2 bg-[#0D883C] text-white rounded-full text-[13px] font-semibold whitespace-nowrap hover:bg-[#10a34a] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#0D883C]/25"
             >
               {t("navigation.getInTouch")}
               <svg

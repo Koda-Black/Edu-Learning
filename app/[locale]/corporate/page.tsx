@@ -30,7 +30,7 @@ export default function CorporatePage() {
             <div className="absolute top-[200px] left-0 w-[300px] h-[400px] rounded-full bg-[#0D883C] blur-[120px]" />
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10">
           <div className="flex flex-col lg:flex-row gap-[60px] items-start">
             <div className="flex-1 max-w-[600px]">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-[13px] font-medium mb-6">
@@ -75,7 +75,7 @@ export default function CorporatePage() {
 
       {/* Benefits */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-[60px] text-center">
             {t("corporate.whyTitle")}
           </h2>
@@ -116,11 +116,11 @@ export default function CorporatePage() {
 
       {/* Process */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="flex flex-col lg:flex-row gap-[60px] items-center">
             <div className="flex-1">
               <img
-                src="/images/project-2.png"
+                src="/images/peoples/adult-man.webp"
                 alt="Corporate process"
                 className="w-full rounded-[20px]"
               />
@@ -161,7 +161,7 @@ export default function CorporatePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10 text-center">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-white leading-[1.2] tracking-[-0.04em] mb-5">
             {t("corporate.ctaTitle")}
           </h2>

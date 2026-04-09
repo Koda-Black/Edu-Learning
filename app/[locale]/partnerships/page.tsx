@@ -38,7 +38,7 @@ export default function PartnershipsPage() {
             <div className="absolute top-[200px] left-0 w-[300px] h-[400px] rounded-full bg-[#0D883C] blur-[120px]" />
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10">
           <div className="flex flex-col lg:flex-row gap-[60px] items-start">
             <div className="flex-1 max-w-[600px]">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-[13px] font-medium mb-6">
@@ -52,7 +52,7 @@ export default function PartnershipsPage() {
               </p>
               <a
                 href={getWhatsAppUrl(
-                  "Hi, I'm interested in learning more about partnership opportunities with Edu learning & Immersion.",
+                  "Hi, I'm interested in learning more about partnership opportunities with Edu Learning & Immersion.",
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export default function PartnershipsPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/about-person.png"
+                src="/images/peoples/young-man.webp"
                 alt="Partnerships"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />
@@ -87,7 +87,7 @@ export default function PartnershipsPage() {
 
       {/* Partnership Types */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-[60px] text-center">
             {t("partnerships.typesTitle")}
           </h2>
@@ -128,18 +128,16 @@ export default function PartnershipsPage() {
 
       {/* Teach Under Edu Learning */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="text-center mb-[60px]">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-white text-[#003B2D] text-[13px] font-medium mb-6">
-              🌍 Teach With Us
+              🌍 {t("partnerships.teachTag")}
             </span>
             <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5">
-              Teach Your Language Under Edu learning & Immersion
+              {t("partnerships.teachTitle")}
             </h2>
             <p className="text-[16px] text-[#4F635E] leading-[1.6] max-w-[600px] mx-auto">
-              Are you a language teacher? Join our platform and teach students
-              from around the world. We&apos;re looking for passionate teachers
-              of these languages and more.
+              {t("partnerships.teachDesc")}
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-12">
@@ -159,13 +157,13 @@ export default function PartnershipsPage() {
           <div className="text-center">
             <a
               href={getWhatsAppUrl(
-                "Hi, I'm a language teacher and I'd love to teach under the Edu learning & Immersion platform. I'd like to discuss opportunities.",
+                "Hi, I'm a language teacher and I'd love to teach under the Edu Learning & Immersion platform. I'd like to discuss opportunities.",
               )}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#0D883C] text-white rounded-[60px] text-[15px] font-semibold hover:bg-[#10a34a] transition-all"
             >
-              Apply to Teach
+              {t("partnerships.applyToTeach")}
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -194,7 +192,7 @@ export default function PartnershipsPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10 text-center">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-white leading-[1.2] tracking-[-0.04em] mb-5">
             {t("partnerships.ctaTitle")}
           </h2>

@@ -80,7 +80,7 @@ export default function TranslationPage() {
             <div className="absolute top-[200px] left-0 w-[300px] h-[400px] rounded-full bg-[#0D883C] blur-[120px]" />
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10">
           <div className="flex flex-col lg:flex-row gap-[60px] items-start">
             <div className="flex-1 max-w-[600px]">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-[13px] font-medium mb-6">
@@ -118,7 +118,7 @@ export default function TranslationPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/hero-tall.png"
+                src="/images/peoples/hero-boy.webp"
                 alt="Translation"
                 className="w-full max-w-[400px] rounded-[20px] ml-auto"
               />
@@ -129,7 +129,7 @@ export default function TranslationPage() {
 
       {/* Services */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-[60px] text-center">
             {t("translation.servicesTitle")}
           </h2>
@@ -170,7 +170,7 @@ export default function TranslationPage() {
 
       {/* Quote Form */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
-        <div className="max-w-[800px] mx-auto px-[30px]">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
             {t("translation.quoteTitle")}
           </h2>
@@ -185,7 +185,7 @@ export default function TranslationPage() {
 
       {/* Interpretation Rate Card */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
             {t("translation.interpretationTitle")}
           </h2>
@@ -194,27 +194,27 @@ export default function TranslationPage() {
           </p>
           <div className="max-w-[800px] mx-auto">
             <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden">
-              <div className="grid grid-cols-3 gap-0 bg-[#003B2D] text-white text-[14px] font-semibold">
-                <div className="p-4">Service</div>
-                <div className="p-4 text-center">
+              <div className="grid grid-cols-3 gap-0 bg-[#003B2D] text-white text-[12px] sm:text-[14px] font-semibold">
+                <div className="p-3 sm:p-4">Service</div>
+                <div className="p-3 sm:p-4 text-center">
                   {t("translation.standardRate")}
                 </div>
-                <div className="p-4 text-center">
+                <div className="p-3 sm:p-4 text-center">
                   {t("translation.urgentRate")}
                 </div>
               </div>
               {interpretationRates.map((rate, i) => (
                 <div
                   key={i}
-                  className={`grid grid-cols-3 gap-0 text-[14px] ${i % 2 === 0 ? "bg-[#F3FAF5]" : "bg-white"}`}
+                  className={`grid grid-cols-3 gap-0 text-[12px] sm:text-[14px] ${i % 2 === 0 ? "bg-[#F3FAF5]" : "bg-white"}`}
                 >
-                  <div className="p-4 font-medium text-[#0A0915]">
+                  <div className="p-3 sm:p-4 font-medium text-[#0A0915]">
                     {rate.title}
                   </div>
-                  <div className="p-4 text-center text-[#4F635E]">
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E]">
                     {rate.standard}
                   </div>
-                  <div className="p-4 text-center text-[#4F635E]">
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E]">
                     {rate.urgent}
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function TranslationPage() {
 
       {/* Proofreading & Editing Rates */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
             {t("translation.proofreadingTitle")}
           </h2>
@@ -262,6 +262,219 @@ export default function TranslationPage() {
                 <p>{t("translation.expressSameDay")}</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Corporate Translation Rate Card */}
+      <section className="py-[60px] lg:py-[100px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
+            {t("translation.corporateTitle")}
+          </h2>
+          <p className="text-[15px] text-[#4F635E] leading-[1.6] text-center mb-10 max-w-[700px] mx-auto">
+            {t("translation.corporateDesc")}
+          </p>
+
+          {/* Rate Table */}
+          <div className="max-w-[900px] mx-auto mb-10">
+            <div className="overflow-x-auto -mx-4 px-4 sm:-mx-0 sm:px-0">
+            <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden min-w-[560px]">
+              {/* Header */}
+              <div className="grid grid-cols-4 gap-0 bg-[#003B2D] text-white text-[12px] sm:text-[14px] font-semibold">
+                <div className="p-3 sm:p-4">
+                  {t("translation.documentTypes")}
+                </div>
+                <div className="p-3 sm:p-4 text-center">
+                  <div>{t("translation.standardService")}</div>
+                  <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
+                    {t("translation.standardTimeline")}
+                  </div>
+                </div>
+                <div className="p-3 sm:p-4 text-center">
+                  <div>{t("translation.semiExpressService")}</div>
+                  <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
+                    {t("translation.semiExpressTimeline")}
+                  </div>
+                </div>
+                <div className="p-3 sm:p-4 text-center">
+                  <div>{t("translation.expressService")}</div>
+                  <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
+                    {t("translation.expressTimeline")}
+                  </div>
+                </div>
+              </div>
+              {/* Simple Documents */}
+              <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-[#F3FAF5]">
+                <div className="p-3 sm:p-4">
+                  <div className="font-medium text-[#0A0915]">
+                    {t("translation.simpleDocuments")}
+                  </div>
+                  <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
+                    {t("translation.simpleDesc")}
+                  </div>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.stdSimpleRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.semiSimpleRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.expSimpleRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+              </div>
+              {/* Legal Documents */}
+              <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-white">
+                <div className="p-3 sm:p-4">
+                  <div className="font-medium text-[#0A0915]">
+                    {t("translation.legalDocuments")}
+                  </div>
+                  <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
+                    {t("translation.legalDesc")}
+                  </div>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.stdLegalRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.semiLegalRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.expLegalRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+              </div>
+              {/* Technical Documents */}
+              <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-[#F3FAF5]">
+                <div className="p-3 sm:p-4">
+                  <div className="font-medium text-[#0A0915]">
+                    {t("translation.technicalDocuments")}
+                  </div>
+                  <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
+                    {t("translation.technicalDesc")}
+                  </div>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.stdTechnicalRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.semiTechnicalRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                  {t("translation.expTechnicalRate")}
+                  <span className="text-[10px] sm:text-[11px] ml-0.5">
+                    /{t("translation.perPage")}
+                  </span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          {/* Notes */}
+          <div className="max-w-[700px] mx-auto space-y-3 text-[13px] text-[#4F635E] mb-10">
+            <p>📌 {t("translation.turnaroundNote")}</p>
+            <p>📌 {t("translation.additionalLangSurcharge")}</p>
+            <p>📌 {t("translation.paymentTermsNote")}</p>
+          </div>
+
+          {/* Document Types Explanation */}
+          <div className="max-w-[700px] mx-auto mb-10">
+            <h3 className="text-[20px] font-semibold text-[#0A0915] mb-6 text-center">
+              {t("translation.docTypesTitle")}
+            </h3>
+            <div className="grid sm:grid-cols-3 gap-4">
+              <div className="bg-[#F3FAF5] rounded-[16px] p-5">
+                <h4 className="text-[15px] font-semibold text-[#0A0915] mb-2">
+                  {t("translation.simpleDocsTitle")}
+                </h4>
+                <p className="text-[13px] text-[#4F635E] leading-[1.5]">
+                  {t("translation.simpleDocsList")}
+                </p>
+              </div>
+              <div className="bg-[#F3FAF5] rounded-[16px] p-5">
+                <h4 className="text-[15px] font-semibold text-[#0A0915] mb-2">
+                  {t("translation.legalDocsTitle")}
+                </h4>
+                <p className="text-[13px] text-[#4F635E] leading-[1.5]">
+                  {t("translation.legalDocsList")}
+                </p>
+              </div>
+              <div className="bg-[#F3FAF5] rounded-[16px] p-5">
+                <h4 className="text-[15px] font-semibold text-[#0A0915] mb-2">
+                  {t("translation.technicalDocsTitle")}
+                </h4>
+                <p className="text-[13px] text-[#4F635E] leading-[1.5]">
+                  {t("translation.technicalDocsList")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Value Proposition */}
+          <div className="max-w-[700px] mx-auto bg-[#F3FAF5] rounded-[20px] p-8 mb-10">
+            <h3 className="text-[20px] font-semibold text-[#0A0915] mb-4">
+              {t("translation.valuePropositionTitle")}
+            </h3>
+            <ul className="space-y-3">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-3 text-[14px] text-[#4F635E]"
+                >
+                  <svg
+                    className="w-5 h-5 text-[#0D883C] shrink-0 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  {t(`translation.vp${i}`)}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="text-center">
+            <p className="text-[14px] text-[#4F635E] mb-3">
+              {t("translation.contactLanguageServices")}
+            </p>
+            <a
+              href={`mailto:${t("translation.languageServicesEmail")}`}
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#0D883C] text-white rounded-[60px] text-[15px] font-semibold hover:bg-[#10a34a] transition-all"
+            >
+              {t("translation.languageServicesEmail")}
+            </a>
           </div>
         </div>
       </section>

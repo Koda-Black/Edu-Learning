@@ -9,9 +9,9 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title:
-    "Edu learning & Immersion — Bridging Languages and Cultures for Global Collaboration",
+    "Edu Learning & Immersion — Unlock Fluency in French and Other Languages for Real-World Success",
   description:
-    "CEFR-aligned language training in English, French & German. Professional translation, interpretation & proofreading services. Corporate programs available.",
+    "CEFR-aligned language training in English, French, German & Spanish. Professional translation, interpretation & proofreading services. Corporate programs available.",
   metadataBase: new URL("https://edu-learning-kappa.vercel.app"),
   icons: {
     icon: [
@@ -21,31 +21,31 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Edu learning & Immersion",
+    title: "Edu Learning & Immersion",
     description:
-      "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
-    siteName: "Edu learning & Immersion",
+      "Unlock Fluency in French and Other Languages for Real-World Success. CEFR-aligned language courses, translation, interpretation & proofreading services.",
+    siteName: "Edu Learning & Immersion",
     type: "website",
     images: [
       {
         url: "https://edu-learning-kappa.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Edu learning & Immersion",
+        alt: "Edu Learning & Immersion",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Edu learning & Immersion",
+    title: "Edu Learning & Immersion",
     description:
-      "Bridging Languages and Cultures for Global Collaboration. CEFR-aligned language courses, translation, interpretation & proofreading services.",
+      "Unlock Fluency in French and Other Languages for Real-World Success. CEFR-aligned language courses, translation, interpretation & proofreading services.",
     images: [
       {
         url: "https://edu-learning-kappa.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Edu learning & Immersion",
+        alt: "Edu Learning & Immersion",
       },
     ],
   },

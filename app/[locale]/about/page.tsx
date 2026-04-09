@@ -21,25 +21,25 @@ export default function AboutPage() {
       name: t("about.tm1Name"),
       role: t("about.tm1Role"),
       desc: t("about.tm1Desc"),
-      img: "/images/testimonial-1.png",
+      img: "/images/team/MICKAEL.jpeg",
     },
     {
       name: t("about.tm2Name"),
       role: t("about.tm2Role"),
       desc: t("about.tm2Desc"),
-      img: "/images/testimonial-2.png",
+      img: "/images/team/GAEL.jpeg",
     },
     {
       name: t("about.tm3Name"),
       role: t("about.tm3Role"),
       desc: t("about.tm3Desc"),
-      img: "/images/testimonial-3.png",
+      img: "/images/team/ADAEZE.jpeg",
     },
     {
       name: t("about.tm4Name"),
       role: t("about.tm4Role"),
       desc: t("about.tm4Desc"),
-      img: "/images/testimonial-4.png",
+      img: "/images/team/MARIA.jpeg",
     },
   ];
 
@@ -132,7 +132,7 @@ export default function AboutPage() {
             <div className="absolute top-[200px] left-0 w-[300px] h-[400px] rounded-full bg-[#0D883C] blur-[120px]" />
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10">
           <div className="flex flex-col lg:flex-row gap-[60px] items-start">
             <div className="flex-1 max-w-[600px]">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-[13px] font-medium mb-6">
@@ -147,7 +147,7 @@ export default function AboutPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/about-person.png"
+                src="/images/peoples/young-man.webp"
                 alt="About"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />
@@ -158,7 +158,7 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-[#F3FAF5] rounded-[20px] p-8 lg:p-10">
               <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5">
@@ -182,7 +182,7 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="flex flex-col lg:flex-row gap-[60px] items-center">
             <div className="flex-1">
               <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-6">
@@ -208,7 +208,7 @@ export default function AboutPage() {
 
       {/* Values */}
       <section className="py-[60px] lg:py-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-[60px] text-center">
             {t("about.values")}
           </h2>
@@ -237,7 +237,7 @@ export default function AboutPage() {
 
       {/* Team */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-[60px] text-center">
             {t("about.teamTitle")}
           </h2>
@@ -277,7 +277,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10 text-center">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-white leading-[1.2] tracking-[-0.04em] mb-5">
             {t("about.ctaTitle")}
           </h2>
@@ -286,7 +286,7 @@ export default function AboutPage() {
           </p>
           <a
             href={getWhatsAppUrl(
-              "Hi, I'd like to learn more about Edu learning & Immersion programs and services.",
+              "Hi, I'd like to learn more about Edu Learning & Immersion programs and services.",
             )}
             target="_blank"
             rel="noopener noreferrer"

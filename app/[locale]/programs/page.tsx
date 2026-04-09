@@ -25,7 +25,7 @@ export default function ProgramsPage() {
       format: t("programs.p1Format"),
       price: "₦32,000–₦34,000",
       desc: t("programs.p1Desc"),
-      img: "/images/hero-main.png",
+      img: "/images/peoples/hero-girl.webp",
     },
     {
       title: t("programs.p2Title"),
@@ -34,7 +34,7 @@ export default function ProgramsPage() {
       format: t("programs.p2Format"),
       price: "₦32,000–₦34,000",
       desc: t("programs.p2Desc"),
-      img: "/images/about-person.png",
+      img: "/images/peoples/young-man.webp",
     },
     {
       title: t("programs.p3Title"),
@@ -52,7 +52,7 @@ export default function ProgramsPage() {
       format: t("programs.p4Format"),
       price: "₦46,000–₦52,000",
       desc: t("programs.p4Desc"),
-      img: "/images/hero-tall.png",
+      img: "/images/peoples/hero-boy.webp",
     },
     {
       title: t("programs.p5Title"),
@@ -61,7 +61,7 @@ export default function ProgramsPage() {
       format: t("programs.p5Format"),
       price: "₦41,600–₦44,200",
       desc: t("programs.p5Desc"),
-      img: "/images/faq-person.png",
+      img: "/images/peoples/young-boy.webp",
     },
     {
       title: t("programs.p6Title"),
@@ -88,7 +88,7 @@ export default function ProgramsPage() {
       format: t("programs.p8Format"),
       price: "Contact us",
       desc: t("programs.p8Desc"),
-      img: "/images/project-2.png",
+      img: "/images/peoples/adult-man.webp",
     },
     {
       title: t("programs.p9Title"),
@@ -97,7 +97,25 @@ export default function ProgramsPage() {
       format: t("programs.p9Format"),
       price: "Custom",
       desc: t("programs.p9Desc"),
-      img: "/images/project-3.png",
+      img: "/images/peoples/adult-girl.webp",
+    },
+    {
+      title: t("programs.p10Title"),
+      level: "a1a2",
+      duration: t("programs.p10Duration"),
+      format: t("programs.p10Format"),
+      price: "₦41,600–₦44,200",
+      desc: t("programs.p10Desc"),
+      img: "/images/peoples/hero-boy-main.webp",
+    },
+    {
+      title: t("programs.p11Title"),
+      level: "b1b2",
+      duration: t("programs.p11Duration"),
+      format: t("programs.p11Format"),
+      price: "On request",
+      desc: t("programs.p11Desc"),
+      img: "/images/hero-card.png",
     },
   ];
 
@@ -117,7 +135,7 @@ export default function ProgramsPage() {
             <div className="absolute top-[200px] left-0 w-[300px] h-[400px] rounded-full bg-[#0D883C] blur-[120px]" />
           </div>
         </div>
-        <div className="max-w-[1280px] mx-auto px-[30px] relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px] relative z-10">
           <div className="max-w-[700px]">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-[13px] font-medium mb-6">
               Our Programs
@@ -134,7 +152,7 @@ export default function ProgramsPage() {
 
       {/* Filters */}
       <section className="pb-10">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="flex flex-wrap gap-3">
             {filters.map((f) => (
               <button
@@ -155,7 +173,7 @@ export default function ProgramsPage() {
 
       {/* Program Cards */}
       <section className="pb-[120px]">
-        <div className="max-w-[1280px] mx-auto px-[30px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((prog, i) => (
               <div
@@ -198,9 +216,7 @@ export default function ProgramsPage() {
                       </span>
                     </div>
                     <a
-                      href={getWhatsAppUrl(
-                        `Hi, I'm interested in the ${prog.title} program (${prog.price}). I'd like to register.`,
-                      )}
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd8BNy8jVCiD0LhYaOJZ76yhXmc_V6EPNAd74_AyPiZZCN3bA/viewform?usp=publish-editor"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-center px-5 py-3 bg-[#0D883C] text-white rounded-[60px] text-[14px] font-semibold hover:bg-[#10a34a] transition-all"
