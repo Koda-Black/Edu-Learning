@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -12,7 +13,10 @@ export const metadata: Metadata = {
     "Edu Learning & Immersion — Unlock Fluency in French and Other Languages for Real-World Success",
   description:
     "CEFR-aligned language training in English, French, German & Spanish. Professional translation, interpretation & proofreading services. Corporate programs available.",
-  metadataBase: new URL("https://edu-learning-kappa.vercel.app"),
+  metadataBase: new URL("https://edulearningimmersion.org"),
+  other: {
+    "google-adsense-account": "ca-pub-4818784412448811",
+  },
   icons: {
     icon: [
       { url: "/favicon.png", sizes: "32x32", type: "image/png" },
@@ -28,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://edu-learning-kappa.vercel.app/images/og-image.png",
+        url: "https://edulearningimmersion.org/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Edu Learning & Immersion",
@@ -42,7 +46,7 @@ export const metadata: Metadata = {
       "Unlock Fluency in French and Other Languages for Real-World Success. CEFR-aligned language courses, translation, interpretation & proofreading services.",
     images: [
       {
-        url: "https://edu-learning-kappa.vercel.app/images/og-image.png",
+        url: "https://edulearningimmersion.org/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Edu Learning & Immersion",
@@ -97,8 +101,6 @@ export default async function RootLayout({
             __html: `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`,
           }}
         />
-        {/* Google AdSense - Add your script here when ready */}
-        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_CLIENT_ID" crossOrigin="anonymous" /> */}
       </head>
       <body className="bg-white text-[#4F635E] antialiased">
         <NextIntlClientProvider messages={messages}>
@@ -109,6 +111,12 @@ export default async function RootLayout({
           </div>
           <ChatBot />
         </NextIntlClientProvider>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4818784412448811"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
