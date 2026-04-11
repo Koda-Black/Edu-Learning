@@ -24,7 +24,7 @@ const KNOWLEDGE_BASE: Record<string, string> = {
   "contact|reach|phone|email|address|whatsapp":
     "You can reach us via:\n• Email: contact@edulearningimmersion.org\n• Language Services: languageservices@edulearningimmersion.org\n• WhatsApp: +234 916 078 4634\n\nWe typically respond within minutes on WhatsApp!",
   "about|who|company|history|founded":
-    "Edu learning & Immersion is a leading provider of language training, translation, interpretation, proofreading, and digital communication solutions. Our mission is to bridge languages and cultures for global collaboration. We serve learners and organizations worldwide with CEFR-structured programs.",
+    "Edu Learning & Immersion is a leading provider of language training, translation, interpretation, proofreading, and digital communication solutions. Our mission is to bridge languages and cultures for global collaboration. We serve learners and organizations worldwide with CEFR-structured programs.",
   "schedule|time|flexible|online|virtual|physical|hybrid|intensive":
     "We offer two formats:\n• Intensive: 5 sessions/week, 10 hours/week\n• Semi-Intensive: 3 sessions/week, 6 hours/week\n\nBoth available online and in-person. Corporate clients can also arrange hybrid and on-site delivery.",
   "beginner|start|new|first time|a1":
@@ -53,7 +53,7 @@ export function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "bot",
-      text: "Hello! 👋 I'm the Edu learning & Immersion assistant. Ask me about our CEFR-aligned language programs, pricing, corporate training, translation & interpretation services, or anything else!",
+      text: "Hello! 👋 I'm the Edu Learning & Immersion assistant. Ask me about our CEFR-aligned language programs, pricing, corporate training, translation & interpretation services, or anything else!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -95,7 +95,7 @@ export function ChatBot() {
       action: () =>
         window.open(
           getWhatsAppUrl(
-            "Hi, I have a question about Edu learning & Immersion",
+            "Hi, I have a question about Edu Learning & Immersion",
           ),
           "_blank",
         ),
@@ -163,7 +163,7 @@ export function ChatBot() {
               </div>
               <div>
                 <h3 className="text-white font-semibold text-sm">
-                  Edu learning & Immersion
+                  Edu Learning & Immersion
                 </h3>
                 <p className="text-white/70 text-xs">
                   Ask me anything about our services

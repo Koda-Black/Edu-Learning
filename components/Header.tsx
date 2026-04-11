@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 export function Header() {
@@ -12,11 +12,27 @@ export function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(e.target as Node)
+      ) {
+        setServicesOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const switchLocalePath = useCallback(
@@ -29,11 +45,15 @@ export function Header() {
 
   const navLinks = [
     { href: "/programs", label: t("header.programs") },
-    { href: "/corporate", label: t("header.corporate") },
-    { href: "/translation", label: t("header.translation") },
     { href: "/partnerships", label: t("header.partnerships") },
     { href: "/blog", label: t("header.blog") },
     { href: "/about", label: t("header.about") },
+  ];
+
+  const servicesDropdown = [
+    { href: "/corporate", label: t("header.corporate") },
+    { href: "/translation", label: t("header.translation") },
+    { href: "/digital-communication", label: t("header.digitalComm") },
   ];
 
   return (
@@ -56,15 +76,61 @@ export function Header() {
               alt="Edu Learning & Immersion"
               className="w-8 h-8 rounded-xl object-contain transition-transform group-hover:scale-105"
             />
-            <span className="text-[#0A0915] font-semibold text-[13px] sm:text-[15px] tracking-tight leading-tight whitespace-nowrap">
-              Edu <span className="text-[#0D883C]">Learning</span>
-              <span className="text-[#0D883C]"> & Immersion</span>
+            <span className="text-[#0D883C] font-semibold text-[13px] sm:text-[15px] tracking-tight leading-tight whitespace-nowrap">
+              Edu Learning & Immersion
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-0">
-            {navLinks.map((link) => (
+            {navLinks.slice(0, 1).map((link) => (
+              <Link
+                key={link.href}
+                href={`/${locale}${link.href}`}
+                className="relative px-2.5 py-2 text-[12px] font-medium whitespace-nowrap text-[#4F635E] hover:text-[#0A0915] transition-colors rounded-full hover:bg-[#F3FAF5]"
+              >
+                {link.label}
+              </Link>
+            ))}
+
+            {/* Services Dropdown */}
+            <div ref={servicesRef} className="relative">
+              <button
+                onClick={() => setServicesOpen(!servicesOpen)}
+                className="relative flex items-center gap-1 px-2.5 py-2 text-[12px] font-medium whitespace-nowrap text-[#4F635E] hover:text-[#0A0915] transition-colors rounded-full hover:bg-[#F3FAF5]"
+              >
+                {t("header.services")}
+                <svg
+                  className={`w-3 h-3 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+              {servicesOpen && (
+                <div className="absolute top-full left-0 mt-1 w-[220px] bg-white rounded-[12px] border border-[#EAF0EF] shadow-xl py-2 z-50 animate-fade-in">
+                  {servicesDropdown.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={`/${locale}${item.href}`}
+                      className="block px-4 py-2.5 text-[13px] font-medium text-[#4F635E] hover:text-[#0A0915] hover:bg-[#F3FAF5] transition-colors"
+                      onClick={() => setServicesOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {navLinks.slice(1).map((link) => (
               <Link
                 key={link.href}
                 href={`/${locale}${link.href}`}
@@ -151,7 +217,53 @@ export function Header() {
         {isOpen && (
           <div className="lg:hidden pb-6 pt-2 border-t border-[#EAF0EF] bg-white rounded-b-2xl animate-fade-in">
             <div className="flex flex-col gap-1 mt-2">
-              {navLinks.map((link) => (
+              {navLinks.slice(0, 1).map((link) => (
+                <Link
+                  key={link.href}
+                  href={`/${locale}${link.href}`}
+                  className="px-4 py-3 text-[#4F635E] hover:text-[#0A0915] hover:bg-[#F3FAF5] rounded-xl text-sm font-medium transition"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              {/* Mobile Services Accordion */}
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex items-center justify-between px-4 py-3 text-[#4F635E] hover:text-[#0A0915] hover:bg-[#F3FAF5] rounded-xl text-sm font-medium transition"
+              >
+                {t("header.services")}
+                <svg
+                  className={`w-4 h-4 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+              {mobileServicesOpen && (
+                <div className="ml-4 flex flex-col gap-1">
+                  {servicesDropdown.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={`/${locale}${item.href}`}
+                      className="px-4 py-2.5 text-[#4F635E] hover:text-[#0A0915] hover:bg-[#F3FAF5] rounded-xl text-[13px] font-medium transition border-l-2 border-[#0D883C]/20"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+              {navLinks.slice(1).map((link) => (
                 <Link
                   key={link.href}
                   href={`/${locale}${link.href}`}

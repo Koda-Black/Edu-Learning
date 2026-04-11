@@ -147,7 +147,7 @@ export default function AboutPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/peoples/young-man.webp"
+                src="/images/peoples/young-girl.webp"
                 alt="About"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />
@@ -250,7 +250,7 @@ export default function AboutPage() {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+                  className="w-16 h-16 rounded-full object-top mx-auto mb-4"
                 />
                 <h3 className="text-[18px] font-semibold text-[#0A0915] mb-1">
                   {member.name}

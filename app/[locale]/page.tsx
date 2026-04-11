@@ -291,7 +291,7 @@ export default function HomePage() {
         t("homepage.pricing.plan3F3"),
         t("homepage.pricing.plan3F4"),
         t("homepage.pricing.plan3F5"),
-        t("homepage.pricing.plan3F6"),
+        // t("homepage.pricing.plan3F6"),
       ],
       excluded: [],
       featured: false,
@@ -422,7 +422,7 @@ export default function HomePage() {
                     </span>
                   </div>
                   <img
-                    src="/images/hero-card.png"
+                    src="/images/peoples/library.webp"
                     alt="Course preview"
                     className="w-full rounded-[10px]"
                   />
@@ -544,7 +544,7 @@ export default function HomePage() {
               <div className="flex-1 max-w-[612px]">
                 <div className="relative rounded-[20px] overflow-visible">
                   <img
-                    src="/images/peoples/young-man.webp"
+                    src="/images/peoples/young-girl.webp"
                     alt="Learning"
                     className="w-full rounded-[20px]"
                   />

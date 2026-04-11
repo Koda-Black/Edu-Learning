@@ -1,4 +1,4 @@
-# EDU LEARNING & IMMERSION — COMPLETE PROJECT MAP
+# Edu Learning & Immersion — COMPLETE PROJECT MAP
 
 **Live URL:** https://edu-learning-kappa.vercel.app
 **GitHub:** https://github.com/Koda-Black/Edu-Learning

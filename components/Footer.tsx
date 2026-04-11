@@ -34,9 +34,8 @@ export function Footer() {
             alt="Edu Learning & Immersion"
             className="w-9 h-9 rounded-xl object-contain"
           />
-          <span className="text-white font-semibold text-lg tracking-tight">
-            Edu <span className="text-[#0D883C]">Learning</span>
-            <span className="text-[#0D883C]"> & Immersion</span>
+          <span className="text-[#0D883C] font-semibold text-lg tracking-tight">
+            Edu Learning & Immersion
           </span>
         </Link>
 
@@ -74,12 +73,27 @@ export function Footer() {
         {/* Social Icons */}
         <div className="flex gap-3 mb-8">
           {[
-            { name: "facebook", url: "https://web.facebook.com/edulearningimmersion" },
+            {
+              name: "facebook",
+              url: "https://web.facebook.com/edulearningimmersion",
+            },
             { name: "twitter", url: "https://x.com/learning22019" },
-            { name: "linkedin", url: "https://www.linkedin.com/company/edu-learning-immersion/" },
-            { name: "youtube", url: "https://www.youtube.com/@EduLearningImmersion" },
-            { name: "instagram", url: "https://www.instagram.com/edulearningimmersion1" },
-            { name: "tiktok", url: "https://www.tiktok.com/@edulearningimmersion" },
+            {
+              name: "linkedin",
+              url: "https://www.linkedin.com/company/edu-learning-immersion/",
+            },
+            {
+              name: "youtube",
+              url: "https://www.youtube.com/@EduLearningImmersion",
+            },
+            {
+              name: "instagram",
+              url: "https://www.instagram.com/edulearningimmersion1",
+            },
+            {
+              name: "tiktok",
+              url: "https://www.tiktok.com/@edulearningimmersion",
+            },
           ].map((s) => (
             <a
               key={s.name}
@@ -120,16 +134,44 @@ export function Footer() {
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
             <div className="bg-white/5 rounded-xl p-4">
-              <svg className="w-5 h-5 text-[#0D883C] mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              <svg
+                className="w-5 h-5 text-[#0D883C] mx-auto mb-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
               </svg>
               <p className="text-white/80 text-sm">{t("footer.location1")}</p>
             </div>
             <div className="bg-white/5 rounded-xl p-4">
-              <svg className="w-5 h-5 text-[#0D883C] mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              <svg
+                className="w-5 h-5 text-[#0D883C] mx-auto mb-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
               </svg>
               <p className="text-white/80 text-sm">{t("footer.location2")}</p>
             </div>

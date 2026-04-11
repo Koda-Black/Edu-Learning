@@ -2,7 +2,6 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
-import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function PartnershipsPage() {
   const t = useTranslations();
@@ -14,6 +13,7 @@ export default function PartnershipsPage() {
     { title: t("partnerships.t3Title"), desc: t("partnerships.t3Desc") },
     { title: t("partnerships.t4Title"), desc: t("partnerships.t4Desc") },
     { title: t("partnerships.t5Title"), desc: t("partnerships.t5Desc") },
+    { title: t("partnerships.t6Title"), desc: t("partnerships.t6Desc") },
   ];
 
   const teachLanguages = [
@@ -51,11 +51,7 @@ export default function PartnershipsPage() {
                 {t("partnerships.subtitle")}
               </p>
               <a
-                href={getWhatsAppUrl(
-                  "Hi, I'm interested in learning more about partnership opportunities with Edu Learning & Immersion.",
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:contact@edulearningimmersion.org"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#0D883C] text-white rounded-[60px] text-[15px] font-semibold hover:bg-[#10a34a] transition-all"
               >
                 {t("partnerships.becomePartner")}
@@ -76,7 +72,7 @@ export default function PartnershipsPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/peoples/young-man.webp"
+                src="/images/peoples/young-girl.webp"
                 alt="Partnerships"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />
@@ -156,11 +152,7 @@ export default function PartnershipsPage() {
           </div>
           <div className="text-center">
             <a
-              href={getWhatsAppUrl(
-                "Hi, I'm a language teacher and I'd love to teach under the Edu Learning & Immersion platform. I'd like to discuss opportunities.",
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:contact@edulearningimmersion.org"
               className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#0D883C] text-white rounded-[60px] text-[15px] font-semibold hover:bg-[#10a34a] transition-all"
             >
               {t("partnerships.applyToTeach")}
@@ -200,11 +192,7 @@ export default function PartnershipsPage() {
             {t("partnerships.ctaDesc")}
           </p>
           <a
-            href={getWhatsAppUrl(
-              "Hey, I'd love to partner with you! Let's discuss how we can collaborate.",
-            )}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:contact@edulearningimmersion.org"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#0D883C] text-white rounded-[60px] text-[15px] font-semibold hover:bg-[#10a34a] transition-all"
           >
             {t("navigation.getInTouch")}
