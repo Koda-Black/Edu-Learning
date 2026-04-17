@@ -64,7 +64,7 @@ export default function CorporatePage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/features-person.png"
+                src="/images/peoples/Corporate-Training.webp"
                 alt="Corporate training"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />
@@ -120,7 +120,7 @@ export default function CorporatePage() {
           <div className="flex flex-col lg:flex-row gap-[60px] items-center">
             <div className="flex-1">
               <img
-                src="/images/peoples/adult-man.webp"
+                src="/images/peoples/How-It-Works.webp"
                 alt="Corporate process"
                 className="w-full rounded-[20px]"
               />

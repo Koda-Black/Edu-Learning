@@ -21,7 +21,7 @@ export default function AboutPage() {
       name: t("about.tm1Name"),
       role: t("about.tm1Role"),
       desc: t("about.tm1Desc"),
-      img: "/images/team/MICKAEL.jpeg",
+      img: "/images/peoples/Talom.webp",
     },
     {
       name: t("about.tm2Name"),
@@ -147,7 +147,7 @@ export default function AboutPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/peoples/young-girl.webp"
+                src="/images/peoples/About-Edu-Learning.webp"
                 alt="About"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />

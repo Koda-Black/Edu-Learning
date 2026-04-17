@@ -118,7 +118,7 @@ export default function TranslationPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/peoples/hero-boy.webp"
+                src="/images/peoples/Translation.webp"
                 alt="Translation"
                 className="w-full max-w-[400px] rounded-[20px] ml-auto"
               />
@@ -278,119 +278,119 @@ export default function TranslationPage() {
           {/* Rate Table */}
           <div className="max-w-[900px] mx-auto mb-10">
             <div className="overflow-x-auto -mx-4 px-4 sm:-mx-0 sm:px-0">
-            <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden min-w-[560px]">
-              {/* Header */}
-              <div className="grid grid-cols-4 gap-0 bg-[#003B2D] text-white text-[12px] sm:text-[14px] font-semibold">
-                <div className="p-3 sm:p-4">
-                  {t("translation.documentTypes")}
-                </div>
-                <div className="p-3 sm:p-4 text-center">
-                  <div>{t("translation.standardService")}</div>
-                  <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
-                    {t("translation.standardTimeline")}
+              <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden min-w-[560px]">
+                {/* Header */}
+                <div className="grid grid-cols-4 gap-0 bg-[#003B2D] text-white text-[12px] sm:text-[14px] font-semibold">
+                  <div className="p-3 sm:p-4">
+                    {t("translation.documentTypes")}
+                  </div>
+                  <div className="p-3 sm:p-4 text-center">
+                    <div>{t("translation.standardService")}</div>
+                    <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
+                      {t("translation.standardTimeline")}
+                    </div>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center">
+                    <div>{t("translation.semiExpressService")}</div>
+                    <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
+                      {t("translation.semiExpressTimeline")}
+                    </div>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center">
+                    <div>{t("translation.expressService")}</div>
+                    <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
+                      {t("translation.expressTimeline")}
+                    </div>
                   </div>
                 </div>
-                <div className="p-3 sm:p-4 text-center">
-                  <div>{t("translation.semiExpressService")}</div>
-                  <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
-                    {t("translation.semiExpressTimeline")}
+                {/* Simple Documents */}
+                <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-[#F3FAF5]">
+                  <div className="p-3 sm:p-4">
+                    <div className="font-medium text-[#0A0915]">
+                      {t("translation.simpleDocuments")}
+                    </div>
+                    <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
+                      {t("translation.simpleDesc")}
+                    </div>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.stdSimpleRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.semiSimpleRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.expSimpleRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
                   </div>
                 </div>
-                <div className="p-3 sm:p-4 text-center">
-                  <div>{t("translation.expressService")}</div>
-                  <div className="text-[10px] sm:text-[11px] font-normal text-white/70 mt-0.5">
-                    {t("translation.expressTimeline")}
+                {/* Legal Documents */}
+                <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-white">
+                  <div className="p-3 sm:p-4">
+                    <div className="font-medium text-[#0A0915]">
+                      {t("translation.legalDocuments")}
+                    </div>
+                    <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
+                      {t("translation.legalDesc")}
+                    </div>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.stdLegalRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.semiLegalRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.expLegalRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                </div>
+                {/* Technical Documents */}
+                <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-[#F3FAF5]">
+                  <div className="p-3 sm:p-4">
+                    <div className="font-medium text-[#0A0915]">
+                      {t("translation.technicalDocuments")}
+                    </div>
+                    <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
+                      {t("translation.technicalDesc")}
+                    </div>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.stdTechnicalRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.semiTechnicalRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
+                  </div>
+                  <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
+                    {t("translation.expTechnicalRate")}
+                    <span className="text-[10px] sm:text-[11px] ml-0.5">
+                      /{t("translation.perPage")}
+                    </span>
                   </div>
                 </div>
               </div>
-              {/* Simple Documents */}
-              <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-[#F3FAF5]">
-                <div className="p-3 sm:p-4">
-                  <div className="font-medium text-[#0A0915]">
-                    {t("translation.simpleDocuments")}
-                  </div>
-                  <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
-                    {t("translation.simpleDesc")}
-                  </div>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.stdSimpleRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.semiSimpleRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.expSimpleRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-              </div>
-              {/* Legal Documents */}
-              <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-white">
-                <div className="p-3 sm:p-4">
-                  <div className="font-medium text-[#0A0915]">
-                    {t("translation.legalDocuments")}
-                  </div>
-                  <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
-                    {t("translation.legalDesc")}
-                  </div>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.stdLegalRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.semiLegalRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.expLegalRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-              </div>
-              {/* Technical Documents */}
-              <div className="grid grid-cols-4 gap-0 text-[12px] sm:text-[14px] bg-[#F3FAF5]">
-                <div className="p-3 sm:p-4">
-                  <div className="font-medium text-[#0A0915]">
-                    {t("translation.technicalDocuments")}
-                  </div>
-                  <div className="text-[10px] sm:text-[11px] text-[#4F635E] mt-1">
-                    {t("translation.technicalDesc")}
-                  </div>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.stdTechnicalRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.semiTechnicalRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-                <div className="p-3 sm:p-4 text-center text-[#4F635E] flex items-center justify-center">
-                  {t("translation.expTechnicalRate")}
-                  <span className="text-[10px] sm:text-[11px] ml-0.5">
-                    /{t("translation.perPage")}
-                  </span>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
 

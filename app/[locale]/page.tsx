@@ -544,7 +544,7 @@ export default function HomePage() {
               <div className="flex-1 max-w-[612px]">
                 <div className="relative rounded-[20px] overflow-visible">
                   <img
-                    src="/images/peoples/young-girl.webp"
+                    src="/images/peoples/About-Edu-Learning.webp"
                     alt="Learning"
                     className="w-full rounded-[20px]"
                   />

@@ -188,7 +188,7 @@ export default function DigitalCommunicationPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/peoples/adult-girl.webp"
+                src="/images/peoples/Business-Support.webp"
                 alt="Digital Communication"
                 className="w-full max-w-[440px] rounded-[20px] ml-auto"
               />

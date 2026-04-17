@@ -72,7 +72,7 @@ export default function PartnershipsPage() {
             </div>
             <div className="hidden lg:block flex-1">
               <img
-                src="/images/peoples/young-girl.webp"
+                src="/images/peoples/Parnership.webp"
                 alt="Partnerships"
                 className="w-full max-w-[500px] rounded-[20px] ml-auto"
               />
