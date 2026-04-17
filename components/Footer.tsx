@@ -22,6 +22,15 @@ export function Footer() {
     { href: `/${locale}/contact`, label: t("header.contact") },
     { href: `/${locale}/partnerships`, label: t("header.partnerships") },
     { href: `/${locale}/translation`, label: t("header.translation") },
+    {
+      href: `/${locale}/digital-communication`,
+      label: t("header.digitalComm"),
+    },
+  ];
+
+  const legalLinks = [
+    { href: `/${locale}/privacy`, label: t("footer.privacy") },
+    { href: `/${locale}/terms`, label: t("footer.terms") },
   ];
 
   return (
@@ -203,9 +212,23 @@ export function Footer() {
         </button>
 
         <div className="w-full border-t border-white/20 pt-6">
-          <p className="text-white/40 text-[14px] text-center">
-            &copy; {currentYear} Edu Learning & Immersion. {t("footer.rights")}
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-white/40 text-[14px] text-center sm:text-left">
+              &copy; {currentYear} Edu Learning & Immersion.{" "}
+              {t("footer.rights")}
+            </p>
+            <div className="flex gap-4">
+              {legalLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-white/40 hover:text-white transition-colors text-[13px]"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </footer>
