@@ -419,11 +419,11 @@ export default function TranslationPage() {
 
           {/* Notes */}
           <div className="max-w-[700px] mx-auto space-y-3 text-[13px] text-[#4F635E] mb-10">
-            <p>ðŸ“Œ {t("translation.turnaroundNote")}</p>
-            <p>ðŸ“Œ {t("translation.additionalLangSurcharge")}</p>
-            <p>ðŸ“Œ {t("translation.paymentTermsNote")}</p>
-            <p>ðŸ“Œ {t("translation.certificateNote")}</p>
-            <p>ðŸ“Œ {t("translation.nonRefundNote")}</p>
+            <p>📌 {t("translation.turnaroundNote")}</p>
+            <p>📌 {t("translation.additionalLangSurcharge")}</p>
+            <p>📌 {t("translation.paymentTermsNote")}</p>
+            <p>📌 {t("translation.certificateNote")}</p>
+            <p>📌 {t("translation.nonRefundNote")}</p>
           </div>
 
           {/* Document Types Explanation */}
@@ -506,4 +506,3 @@ export default function TranslationPage() {
     </main>
   );
 }
-
