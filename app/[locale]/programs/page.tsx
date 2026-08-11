@@ -33,7 +33,7 @@ export default function ProgramsPage() {
       level: "a1a2",
       duration: t("programs.p1Duration"),
       format: t("programs.p1Format"),
-      price: "₦32,000–₦34,000",
+      price: "â‚¦54,400â€“â‚¦57,800",
       desc: t("programs.p1Desc"),
       img: "/images/peoples/hero-girl.webp",
       formUrl: DEFAULT_FORM,
@@ -43,7 +43,7 @@ export default function ProgramsPage() {
       level: "a1a2",
       duration: t("programs.p2Duration"),
       format: t("programs.p2Format"),
-      price: "₦32,000–₦34,000",
+      price: "â‚¦54,400â€“â‚¦57,800",
       desc: t("programs.p2Desc"),
       img: "/images/peoples/young-girl.webp",
       formUrl: DEFAULT_FORM,
@@ -53,7 +53,7 @@ export default function ProgramsPage() {
       level: "b1b2",
       duration: t("programs.p3Duration"),
       format: t("programs.p3Format"),
-      price: "₦46,000–₦52,000",
+      price: "â‚¦78,200â€“â‚¦88,400",
       desc: t("programs.p3Desc"),
       img: "/images/features-person.png",
       formUrl: DEFAULT_FORM,
@@ -63,7 +63,7 @@ export default function ProgramsPage() {
       level: "b1b2",
       duration: t("programs.p4Duration"),
       format: t("programs.p4Format"),
-      price: "₦46,000–₦52,000",
+      price: "â‚¦78,200â€“â‚¦88,400",
       desc: t("programs.p4Desc"),
       img: "/images/peoples/hero-boy.webp",
       formUrl: DEFAULT_FORM,
@@ -73,7 +73,7 @@ export default function ProgramsPage() {
       level: "a1a2",
       duration: t("programs.p5Duration"),
       format: t("programs.p5Format"),
-      price: "₦41,600–₦44,200",
+      price: "â‚¦41,600â€“â‚¦44,200",
       desc: t("programs.p5Desc"),
       img: "/images/peoples/young-boy.webp",
       formUrl: DEFAULT_FORM,
@@ -123,7 +123,7 @@ export default function ProgramsPage() {
       level: "a1a2",
       duration: t("programs.p10Duration"),
       format: t("programs.p10Format"),
-      price: "₦41,600–₦44,200",
+      price: "â‚¦41,600â€“â‚¦44,200",
       desc: t("programs.p10Desc"),
       img: "/images/peoples/hero-boy-main.webp",
       formUrl: DEFAULT_FORM,
@@ -168,6 +168,16 @@ export default function ProgramsPage() {
       img: "/images/peoples/school-boy.webp",
       formUrl: DEFAULT_FORM,
     },
+    {
+      title: t("programs.p15Title"),
+      level: "special",
+      duration: t("programs.p15Duration"),
+      format: t("programs.p15Format"),
+      price: "Custom",
+      desc: t("programs.p15Desc"),
+      img: "/images/peoples/adult-girl.webp",
+      formUrl: DEFAULT_FORM,
+    },
   ];
 
   const levelLabels: Record<string, string> = {
@@ -186,66 +196,66 @@ export default function ProgramsPage() {
   const overviewData = [
     {
       lang: t("programs.overviewLang1"),
-      levels: "A1–A2",
+      levels: "A1â€“A2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "32–34h " + t("programs.overviewPerPack"),
+      hours: "32â€“34h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone1"),
     },
     {
       lang: t("programs.overviewLang1"),
-      levels: "B1–B2",
+      levels: "B1â€“B2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "46–52h " + t("programs.overviewPerPack"),
+      hours: "46â€“52h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone2"),
     },
     {
       lang: t("programs.overviewLang2"),
-      levels: "A1–A2",
+      levels: "A1â€“A2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "32–34h " + t("programs.overviewPerPack"),
+      hours: "32â€“34h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone1"),
     },
     {
       lang: t("programs.overviewLang2"),
-      levels: "B1–B2",
+      levels: "B1â€“B2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "46–52h " + t("programs.overviewPerPack"),
+      hours: "46â€“52h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone2"),
     },
     {
       lang: t("programs.overviewLang3"),
-      levels: "A1–A2",
+      levels: "A1â€“A2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "32–34h " + t("programs.overviewPerPack"),
+      hours: "32â€“34h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone1"),
     },
     {
       lang: t("programs.overviewLang3"),
-      levels: "B1–B2",
+      levels: "B1â€“B2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "46–52h " + t("programs.overviewPerPack"),
+      hours: "46â€“52h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone2"),
     },
     {
       lang: t("programs.overviewLang4"),
-      levels: "A1–A2",
+      levels: "A1â€“A2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "32–34h " + t("programs.overviewPerPack"),
+      hours: "32â€“34h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone1"),
     },
     {
       lang: t("programs.overviewLang4"),
-      levels: "B1–B2",
+      levels: "B1â€“B2",
       packs: "3 " + t("programs.overviewPacksPerLevel"),
       schedule: t("programs.overviewSchedule1"),
-      hours: "46–52h " + t("programs.overviewPerPack"),
+      hours: "46â€“52h " + t("programs.overviewPerPack"),
       milestone: t("programs.overviewMilestone2"),
     },
     {
@@ -266,7 +276,7 @@ export default function ProgramsPage() {
     },
     {
       lang: t("programs.overviewLang7"),
-      levels: "A1–B2+",
+      levels: "A1â€“B2+",
       packs: t("programs.overviewCustom"),
       schedule: t("programs.overviewSchedule4"),
       hours: t("programs.overviewCustom"),
@@ -299,7 +309,7 @@ export default function ProgramsPage() {
               href={`/${locale}/programs/cefr`}
               className="inline-flex items-center gap-1.5 text-[#0D883C] text-[14px] font-semibold hover:underline"
             >
-              {t("programs.learnMoreCefr")} →
+              {t("programs.learnMoreCefr")} â†’
             </Link>
           </div>
         </div>
@@ -457,3 +467,4 @@ export default function ProgramsPage() {
     </main>
   );
 }
+
