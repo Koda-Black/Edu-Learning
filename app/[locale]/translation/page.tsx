@@ -70,7 +70,7 @@ export default function TranslationPage() {
   ];
 
   return (
-    <main className="bg-white">
+    <main className="bg-white flex flex-col">
       {/* Hero */}
       <section className="relative pt-32 pb-16 lg:pb-20 overflow-hidden">
         {/* Decorative blurs */}
@@ -184,7 +184,7 @@ export default function TranslationPage() {
       </section>
 
       {/* Interpretation Rate Card */}
-      <section className="py-[60px] lg:py-[120px]">
+      <section className="py-[60px] lg:py-[120px] order-5">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
             {t("translation.interpretationTitle")}
@@ -228,7 +228,7 @@ export default function TranslationPage() {
       </section>
 
       {/* Proofreading & Editing Rates */}
-      <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
+      <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5] order-6">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
             {t("translation.proofreadingTitle")}
@@ -253,20 +253,11 @@ export default function TranslationPage() {
                 </div>
               ))}
             </div>
-            <div className="bg-white rounded-[20px] border border-[#EAF0EF] p-6">
-              <h3 className="text-[16px] font-semibold text-[#0A0915] mb-3">
-                {t("translation.expressTitle")}
-              </h3>
-              <div className="space-y-2 text-[14px] text-[#4F635E]">
-                <p>{t("translation.express24h")}</p>
-                <p>{t("translation.expressSameDay")}</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
       {/* Corporate Translation Rate Card */}
-      <section className="py-[60px] lg:py-[100px]">
+      <section className="py-[60px] lg:py-[100px] order-4">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">
           <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5 text-center">
             {t("translation.corporateTitle")}
@@ -277,6 +268,9 @@ export default function TranslationPage() {
 
           {/* Rate Table */}
           <div className="max-w-[900px] mx-auto mb-10">
+            <h3 className="text-[20px] font-semibold text-[#0A0915] mb-5 text-center">
+              {t("translation.frenchEnglishRatesTitle")}
+            </h3>
             <div className="overflow-x-auto -mx-4 px-4 sm:-mx-0 sm:px-0">
               <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden min-w-[560px]">
                 {/* Header */}
@@ -394,11 +388,42 @@ export default function TranslationPage() {
             </div>
           </div>
 
+          <div className="max-w-[900px] mx-auto mb-10">
+            <h3 className="text-[20px] font-semibold text-[#0A0915] mb-3 text-center">
+              {t("translation.otherLanguageRatesTitle")}
+            </h3>
+            <p className="text-[13px] text-[#4F635E] leading-[1.6] text-center mb-5 max-w-[700px] mx-auto">
+              {t("translation.otherLanguageRatesDesc")}
+            </p>
+            <div className="overflow-x-auto -mx-4 px-4 sm:-mx-0 sm:px-0">
+              <div className="bg-white rounded-[20px] border border-[#EAF0EF] overflow-hidden min-w-[560px]">
+                <div className="grid grid-cols-4 bg-[#003B2D] text-white text-[12px] sm:text-[14px] font-semibold">
+                  <div className="p-3 sm:p-4">{t("translation.documentTypes")}</div>
+                  <div className="p-3 sm:p-4 text-center">{t("translation.standardService")}</div>
+                  <div className="p-3 sm:p-4 text-center">{t("translation.semiExpressService")}</div>
+                  <div className="p-3 sm:p-4 text-center">{t("translation.expressService")}</div>
+                </div>
+                {["simpleDocuments", "legalDocuments", "technicalDocuments"].map((key, i) => (
+                  <div key={key} className={`grid grid-cols-4 text-[12px] sm:text-[14px] ${i % 2 === 0 ? "bg-[#F3FAF5]" : "bg-white"}`}>
+                    <div className="p-3 sm:p-4 font-medium text-[#0A0915]">{t(`translation.${key}`)}</div>
+                    {[0, 1, 2].map((column) => (
+                      <div key={column} className="p-3 sm:p-4 text-center text-[#4F635E]">
+                        {t("translation.otherLanguageRate")}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Notes */}
           <div className="max-w-[700px] mx-auto space-y-3 text-[13px] text-[#4F635E] mb-10">
-            <p>📌 {t("translation.turnaroundNote")}</p>
-            <p>📌 {t("translation.additionalLangSurcharge")}</p>
-            <p>📌 {t("translation.paymentTermsNote")}</p>
+            <p>ðŸ“Œ {t("translation.turnaroundNote")}</p>
+            <p>ðŸ“Œ {t("translation.additionalLangSurcharge")}</p>
+            <p>ðŸ“Œ {t("translation.paymentTermsNote")}</p>
+            <p>ðŸ“Œ {t("translation.certificateNote")}</p>
+            <p>ðŸ“Œ {t("translation.nonRefundNote")}</p>
           </div>
 
           {/* Document Types Explanation */}
@@ -481,3 +506,4 @@ export default function TranslationPage() {
     </main>
   );
 }
+
