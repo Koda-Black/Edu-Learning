@@ -114,6 +114,34 @@ export default function CorporatePage() {
         </div>
       </section>
 
+      <section id="private-corporate-training" className="scroll-mt-24 py-[60px] lg:py-[120px] bg-[#F3FAF5]">
+        <div className="max-w-[900px] mx-auto px-4 sm:px-[30px]">
+          <div className="bg-white rounded-[20px] border border-[#EAF0EF] p-8 sm:p-10 lg:p-12">
+            <h2 className="text-[28px] sm:text-[36px] font-bold text-[#0A0915] leading-[1.2] tracking-[-0.04em] mb-5">
+              {t("corporate.privateCorporateTitle")}
+            </h2>
+            <p className="text-[16px] text-[#4F635E] leading-[1.7] mb-7">
+              {t("corporate.privateCorporateIntro")}
+            </p>
+            <div className="grid sm:grid-cols-2 gap-5 mb-7">
+              <div className="rounded-[16px] bg-[#F3FAF5] p-6">
+                <h3 className="text-[18px] font-semibold text-[#0A0915] mb-3">{t("corporate.privateLessonsTitle")}</h3>
+                <p className="text-[14px] text-[#4F635E] leading-[1.7]">{t("corporate.privateLessonsDesc")}</p>
+              </div>
+              <div className="rounded-[16px] bg-[#F3FAF5] p-6">
+                <h3 className="text-[18px] font-semibold text-[#0A0915] mb-3">{t("corporate.corporateTrainingTitle")}</h3>
+                <p className="text-[14px] text-[#4F635E] leading-[1.7]">{t("corporate.corporateTrainingDesc")}</p>
+              </div>
+            </div>
+            <p className="text-[15px] text-[#4F635E] leading-[1.7] mb-3">{t("corporate.privateCorporateAudience")}</p>
+            <p className="text-[15px] text-[#4F635E] leading-[1.7] mb-7">{t("corporate.privateCorporateContact")}</p>
+            <button onClick={() => setShowConsultation(true)} className="inline-flex items-center justify-center px-7 py-3.5 bg-[#0D883C] text-white rounded-[60px] text-[15px] font-semibold hover:bg-[#10a34a] transition-all">
+              {t("corporate.cta")}
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Process */}
       <section className="py-[60px] lg:py-[120px] bg-[#F3FAF5]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-[30px]">

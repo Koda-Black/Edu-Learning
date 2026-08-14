@@ -253,7 +253,7 @@ export default function HomePage() {
   const pricing = [
     {
       name: t("homepage.pricing.plan1Name"),
-      price: "₦32,000",
+      price: "₦54,400",
       period: t("homepage.pricing.plan1Period"),
       desc: t("homepage.pricing.plan1Desc"),
       included: [
@@ -267,7 +267,7 @@ export default function HomePage() {
     },
     {
       name: t("homepage.pricing.plan2Name"),
-      price: "₦46,000",
+      price: "₦78,200",
       period: t("homepage.pricing.plan2Period"),
       desc: t("homepage.pricing.plan2Desc"),
       included: [
@@ -282,7 +282,7 @@ export default function HomePage() {
     },
     {
       name: t("homepage.pricing.plan3Name"),
-      price: "₦41,600",
+      price: "₦68,800",
       period: t("homepage.pricing.plan3Period"),
       desc: t("homepage.pricing.plan3Desc"),
       included: [
@@ -971,6 +971,12 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            <Link
+              href={`/${locale}/corporate#private-corporate-training`}
+              className="block mt-8 text-center text-[16px] font-bold text-[#003B2D] underline decoration-2 underline-offset-4 hover:text-[#0D883C] transition-colors"
+            >
+              {t("homepage.pricing.tailoredCoursesNote")}
+            </Link>
           </div>
         </section>
       </RevealSection>
