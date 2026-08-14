@@ -11,42 +11,36 @@ export default function BlogPage() {
     {
       title: t("blog.p1Title"),
       desc: t("blog.p1Desc"),
-      date: t("blog.p1Date"),
       tag: t("blog.p1Tag"),
       img: "/images/hero-main.png",
     },
     {
       title: t("blog.p2Title"),
       desc: t("blog.p2Desc"),
-      date: t("blog.p2Date"),
       tag: t("blog.p2Tag"),
       img: "/images/features-person.png",
     },
     {
       title: t("blog.p3Title"),
       desc: t("blog.p3Desc"),
-      date: t("blog.p3Date"),
       tag: t("blog.p3Tag"),
       img: "/images/peoples/young-man.webp",
     },
     {
       title: t("blog.p4Title"),
       desc: t("blog.p4Desc"),
-      date: t("blog.p4Date"),
       tag: t("blog.p4Tag"),
       img: "/images/hero-tall.png",
     },
     {
       title: t("blog.p5Title"),
       desc: t("blog.p5Desc"),
-      date: t("blog.p5Date"),
       tag: t("blog.p5Tag"),
       img: "/images/faq-person.png",
     },
     {
       title: t("blog.p6Title"),
       desc: t("blog.p6Desc"),
-      date: t("blog.p6Date"),
       tag: t("blog.p6Tag"),
       img: "/images/project-1.png",
     },
@@ -98,9 +92,6 @@ export default function BlogPage() {
                   <div className="flex items-center gap-3 mb-4">
                     <span className="px-3 py-1 rounded-[40px] bg-[#F3FAF5] text-[#003B2D] text-xs font-medium">
                       {post.tag}
-                    </span>
-                    <span className="text-[13px] text-[#4F635E]">
-                      {post.date}
                     </span>
                   </div>
                   <h3 className="text-[18px] font-semibold text-[#0A0915] leading-[1.3] mb-2">

@@ -34,6 +34,7 @@ export default function ProgramsPage() {
       duration: t("programs.p1Duration"),
       format: t("programs.p1Format"),
       price: "₦54,400–₦57,800",
+      pricingDetails: [t("programs.a1a2Pack1"), t("programs.a1a2Pack2"), t("programs.a1a2Pack3")],
       desc: t("programs.p1Desc"),
       img: "/images/peoples/hero-girl.webp",
       formUrl: DEFAULT_FORM,
@@ -44,6 +45,7 @@ export default function ProgramsPage() {
       duration: t("programs.p2Duration"),
       format: t("programs.p2Format"),
       price: "₦54,400–₦57,800",
+      pricingDetails: [t("programs.a1a2Pack1"), t("programs.a1a2Pack2"), t("programs.a1a2Pack3")],
       desc: t("programs.p2Desc"),
       img: "/images/peoples/young-girl.webp",
       formUrl: DEFAULT_FORM,
@@ -54,6 +56,7 @@ export default function ProgramsPage() {
       duration: t("programs.p3Duration"),
       format: t("programs.p3Format"),
       price: "₦78,200–₦88,400",
+      pricingDetails: [t("programs.b1b2Pack1"), t("programs.b1b2Pack2"), t("programs.b1b2Pack3")],
       desc: t("programs.p3Desc"),
       img: "/images/features-person.png",
       formUrl: DEFAULT_FORM,
@@ -64,6 +67,7 @@ export default function ProgramsPage() {
       duration: t("programs.p4Duration"),
       format: t("programs.p4Format"),
       price: "₦78,200–₦88,400",
+      pricingDetails: [t("programs.b1b2Pack1"), t("programs.b1b2Pack2"), t("programs.b1b2Pack3")],
       desc: t("programs.p4Desc"),
       img: "/images/peoples/hero-boy.webp",
       formUrl: DEFAULT_FORM,
@@ -73,7 +77,8 @@ export default function ProgramsPage() {
       level: "a1a2",
       duration: t("programs.p5Duration"),
       format: t("programs.p5Format"),
-      price: "₦41,600–₦44,200",
+      price: "₦68,800–₦73,100",
+      pricingDetails: [t("programs.germanSpanishPack1"), t("programs.germanSpanishPack2"), t("programs.germanSpanishPack3")],
       desc: t("programs.p5Desc"),
       img: "/images/peoples/young-boy.webp",
       formUrl: DEFAULT_FORM,
@@ -123,7 +128,8 @@ export default function ProgramsPage() {
       level: "a1a2",
       duration: t("programs.p10Duration"),
       format: t("programs.p10Format"),
-      price: "₦41,600–₦44,200",
+      price: "₦68,800–₦73,100",
+      pricingDetails: [t("programs.germanSpanishPack1"), t("programs.germanSpanishPack2"), t("programs.germanSpanishPack3")],
       desc: t("programs.p10Desc"),
       img: "/images/peoples/hero-boy-main.webp",
       formUrl: DEFAULT_FORM,
@@ -376,6 +382,16 @@ export default function ProgramsPage() {
                         {prog.price}
                       </span>
                     </div>
+                    {prog.pricingDetails && (
+                      <ul className="mb-5 space-y-2 rounded-[14px] bg-[#F3FAF5] p-4 text-[13px] text-[#4F635E]">
+                        {prog.pricingDetails.map((detail) => (
+                          <li key={detail} className="font-medium">{detail}</li>
+                        ))}
+                        <li className="border-t border-[#D8EBDD] pt-2 text-[12px] font-normal italic">
+                          {t("programs.completionNote")}
+                        </li>
+                      </ul>
+                    )}
                     <a
                       href={prog.formUrl}
                       target="_blank"
